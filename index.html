@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Taloryn Labs — PDF Suite Desktop</title>
+  <meta name="description" content="PDF Suite Desktop rimuove davvero codici fiscali, IBAN e nomi dai PDF e dai file Word, sul tuo computer e senza internet. Per studi professionali italiani.">
+  <meta name="referrer" content="no-referrer">
+  <link rel="stylesheet" href="stile.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%2317243a'/%3E%3Crect x='7' y='13' width='18' height='6' fill='%23ffffff'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<header class="testata">
+  <div class="contenitore">
+    <a class="marchio" href="/">Taloryn Labs</a>
+    <nav aria-label="Principale"><a href="#lista-attesa">Lista d'attesa</a></nav>
+  </div>
+</header>
+
+<main>
+
+<section class="apertura">
+  <div class="contenitore">
+    <div>
+      <h1>Documenti dei clienti, condivisi senza i loro dati.</h1>
+      <p class="sottotitolo">PDF Suite Desktop toglie codici fiscali, IBAN e nomi da PDF e file Word. Sul tuo computer, senza internet, e controlla che non ne resti traccia nel file.</p>
+      <div class="azioni">
+        <a class="pulsante" href="#lista-attesa">Entra nella lista d'attesa</a>
+        <span class="nota">Per studi professionali, in uscita per Windows.</span>
+      </div>
+    </div>
+
+    <figure class="documento" aria-labelledby="doc-descrizione">
+      <p id="doc-descrizione" class="visivamente-nascosto">Esempio: in una dichiarazione il nome, il codice fiscale, il comune di nascita e l'IBAN vengono oscurati; l'indirizzo viene evidenziato in giallo per un controllo manuale; la verifica finale conferma che nel file non resta nessun dato oscurato.</p>
+      <div aria-hidden="true">
+        <div class="intestazione-doc">Dichiarazione sostitutiva di certificazione</div>
+        <p>La sottoscritta <span class="dato d1">Laura Bianchi</span>, codice fiscale <span class="dato d2">BNCLRA82M45G388D</span>, nata a <span class="dato d3">Pavia</span>, residente in <span class="dubbio">via dei Mille 14</span>, dichiara di essere titolare del conto corrente</p>
+        <p>IBAN <span class="dato d4">IT60 X054 2811 1010 0000 0123 456</span> presso cui chiede l'accredito delle somme spettanti.</p>
+        <div class="esito">
+          <span><i class="segno nero"></i>4 dati rimossi dal file</span>
+          <span><i class="segno giallo"></i>1 indirizzo da controllare a occhio</span>
+          <span><i class="segno verde"></i>Verifica: nessun dato rimosso è ancora leggibile nel file</span>
+        </div>
+      </div>
+    </figure>
+  </div>
+</section>
+
+<section class="sezione" aria-labelledby="t-coprire">
+  <div class="contenitore">
+    <h2 id="t-coprire">Coprire non è cancellare.</h2>
+    <div class="corpo">
+      <p>Un rettangolo nero disegnato sopra un PDF nasconde il testo allo sguardo, ma spesso il testo resta nel file: basta selezionarlo e copiarlo. Lo stesso vale per i commenti, i metadati e la cronologia delle revisioni nei file Word.</p>
+      <div class="confronto">
+        <div>
+          <h3>Strumenti di copertura</h3>
+          <p>Disegnano sopra il dato. Il file sembra pulito, ma il contenuto originale può essere ancora dentro.</p>
+        </div>
+        <div class="nostro">
+          <h3>PDF Suite Desktop</h3>
+          <p>Toglie il dato dal file, poi rilegge il risultato da zero. Se trova ancora qualcosa, non salva.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sezione" aria-labelledby="t-come">
+  <div class="contenitore">
+    <h2 id="t-come">Come funziona.</h2>
+    <ol class="passi">
+      <li><h3>Apri il documento</h3><p>PDF con testo o file Word in italiano. Il file non lascia mai il tuo computer.</p></li>
+      <li><h3>Il programma trova i dati</h3><p>Codice fiscale, partita IVA e IBAN vengono riconosciuti con i loro controlli matematici. Nomi e cognomi li indichi tu, con le loro varianti.</p></li>
+      <li><h3>Controlli tu</h3><p>Vedi ogni pagina con le zone proposte. I riferimenti indiretti, come indirizzi e date, sono segnalati in giallo. Approvi, togli o aggiungi.</p></li>
+      <li><h3>Il dato viene rimosso</h3><p>Dal testo, dai metadati, dai commenti, dagli allegati e dalla cronologia delle revisioni.</p></li>
+      <li><h3>Verifica e rapporto</h3><p>Il file finale viene riletto. Ricevi un riepilogo di cosa è stato tolto, pagina per pagina, senza riportare i dati.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sezione" aria-labelledby="t-limiti">
+  <div class="contenitore">
+    <h2 id="t-limiti">Cosa non fa, per ora.</h2>
+    <div class="corpo">
+      <p>La prima versione fa una cosa sola e la fa bene. Preferiamo dirlo prima:</p>
+      <ul class="elenco">
+        <li>non legge i documenti scansionati o fotografati;</li>
+        <li>lavora in italiano e su Windows;</li>
+        <li>elabora un documento alla volta, non intere cartelle;</li>
+        <li>non usa intelligenza artificiale per decidere cosa togliere.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="sezione" aria-labelledby="t-principi">
+  <div class="contenitore">
+    <h2 id="t-principi">Come lavoriamo.</h2>
+    <div class="principi">
+      <div><h3>Regole, non indovinelli</h3><p>Il nucleo dei nostri programmi segue regole scritte e verificabili. Se incontra un caso che non conosce, si ferma e te lo dice.</p></div>
+      <div><h3>I tuoi dati restano tuoi</h3><p>Niente cloud, niente account, niente pubblicità, nessuna vendita di dati.</p></div>
+      <div><h3>Prezzo chiaro</h3><p>Licenza annuale per postazione, con il prezzo pubblicato su questo sito. Nessun costo nascosto.</p></div>
+      <div><h3>Assistenza per iscritto</h3><p>Rispondiamo via email, con risposte precise che restano agli atti.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sezione attesa" id="lista-attesa" aria-labelledby="t-attesa">
+  <div class="contenitore">
+    <h2 id="t-attesa">Entra nella lista d'attesa.</h2>
+    <div class="corpo">
+      <p>Scrivici da un indirizzo del tuo studio. Ti avvisiamo una sola volta, quando PDF Suite Desktop sarà disponibile.</p>
+      <div class="azioni">
+        <a class="pulsante" href="mailto:info@talorynlabs.it?subject=Lista%20d'attesa%20PDF%20Suite%20Desktop&amp;body=Vorrei%20essere%20avvisato%20quando%20PDF%20Suite%20Desktop%20sar%C3%A0%20disponibile.%0A%0ATipo%20di%20studio%20(facoltativo)%3A%20">Scrivi a info@talorynlabs.it</a>
+      </div>
+      <p class="nota">Usiamo il tuo indirizzo solo per questo avviso. Nessun modulo, nessun servizio esterno. Dettagli nell'<a href="privacy.html">informativa privacy</a>.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="piede">
+  <div class="contenitore">
+    <p>Taloryn Labs, <a href="mailto:info@talorynlabs.it">info@talorynlabs.it</a></p>
+    <p>Questo sito non usa cookie né strumenti di tracciamento. <a href="privacy.html">Informativa privacy</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
