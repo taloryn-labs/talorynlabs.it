@@ -8,4 +8,4 @@ Valgono anche le regole del documento madre `C:\TalorynLabs\CLAUDE.md`.
 - Ogni affermazione sul prodotto deve corrispondere alla specifica approvata del progetto.
 - Pubblicazione: GitHub Pages con dominio talorynlabs.it (file `CNAME`). Repository pubblico: mai
   segreti né dati personali nei file.
-- Prima della pubblicazione vanno completate le parti evidenziate in `privacy.html`.
+- Titolare privacy: Taloryn Labs (contatto info@talorynlabs.it). Da aggiornare quando nascerà la partita IVA o la società.
