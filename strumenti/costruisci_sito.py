@@ -284,7 +284,7 @@ pdf = f'''<section class="testa-pagina con-figura" aria-labelledby="t-pdf">
       <p>Il programma propone, tu decidi. Niente viene tolto o lasciato senza che tu lo veda.</p>
     </div>
     <ol class="passi">
-      <li><h3>Apri il documento</h3><p>Un PDF con testo o un file Word (.docx) in italiano. Il file non lascia mai il tuo computer.</p></li>
+      <li><h3>Apri il documento</h3><p>Un PDF, anche scansionato, una foto di un documento o un file Word (.docx) in italiano. Il file non lascia mai il tuo computer.</p></li>
       <li><h3>Il programma trova i dati</h3><p>Codici fiscali, partite IVA, IBAN, email e telefoni in automatico. Nomi e cognomi li indichi tu, e vengono cercate anche le varianti.</p></li>
       <li><h3>Controlli pagina per pagina</h3><p>Vedi ogni pagina con le zone proposte. Indirizzi, date di nascita e riferimenti indiretti sono segnalati in giallo. Approvi, togli o aggiungi.</p></li>
       <li><h3>Rimozione e verifica</h3><p>Il dato viene tolto dal file. Il risultato viene riletto da zero: se un dato è ancora presente, il salvataggio si blocca.</p></li>
@@ -340,7 +340,7 @@ pdf = f'''<section class="testa-pagina con-figura" aria-labelledby="t-pdf">
       <p class="corpo" style="margin-top:18px">La prima versione fa una cosa sola e deve farla bene. Preferiamo dirlo prima.</p>
     </div>
     <ul class="elenco-segni">
-      <li>{ico("warning")}<span>Non legge i documenti scansionati o fotografati: servono PDF con testo selezionabile.</span></li>
+      <li>{ico("warning")}<span>Non legge la scrittura a mano.</span></li>
       <li>{ico("warning")}<span>Lavora sui documenti in italiano, solo su Windows.</span></li>
       <li>{ico("warning")}<span>Elabora un documento alla volta, non intere cartelle.</span></li>
       <li>{ico("warning")}<span>Non usa l'intelligenza artificiale per decidere cosa togliere.</span></li>
@@ -368,7 +368,7 @@ pdf = f'''<section class="testa-pagina con-figura" aria-labelledby="t-pdf">
     <div><div class="occhiello">Domande</div><h2 id="t-domande">Domande frequenti.</h2></div>
     <div class="domande">
       <details><summary>I miei documenti arrivano a voi?</summary><p>No. Il programma lavora solo sul tuo computer e non si collega a internet. I documenti che apri non lasciano mai il tuo studio.</p></details>
-      <details><summary>Funziona con i documenti scansionati?</summary><p>Non nella prima versione. Servono PDF con testo selezionabile, oppure file Word. I documenti scansionati o fotografati sono immagini e richiedono un lavoro diverso, che valuteremo per le versioni successive.</p></details>
+      <details><summary>Funziona con i documenti scansionati?</summary><p>Sì. Il testo delle scansioni e delle foto viene riconosciuto sul tuo computer, senza internet. Le parole lette con poca sicurezza sono segnalate in giallo, e l'oscuramento cancella davvero l'immagine nella zona, non la copre. La qualità dipende dalla scansione: pubblicheremo i risultati delle prove separati da quelli dei documenti con testo.</p></details>
       <details><summary>Usa l'intelligenza artificiale?</summary><p>No. Ogni dato viene riconosciuto con regole precise e, dove esiste, con il controllo matematico. Così lo stesso documento dà sempre lo stesso risultato, e puoi capire perché.</p></details>
       <details><summary>E se il programma sbaglia?</summary><p>Per questo c'è la revisione pagina per pagina: vedi tutto quello che viene proposto e puoi togliere o aggiungere. Alla fine il file viene riletto: se un dato oscurato è ancora presente, il salvataggio si blocca.</p></details>
       <details><summary>Quando esce?</summary><p>Non abbiamo ancora una data e non vogliamo inventarla. Iscriviti alla lista d'attesa: ti scriviamo una sola volta, quando sarà disponibile.</p></details>
@@ -399,6 +399,7 @@ sic = f'''<section class="testa-pagina" aria-labelledby="t-sic">
       <div class="scheda"><div class="icona">{ico("lock-key")}</div><h3>Tutto in locale</h3><p>I documenti vengono aperti, analizzati e salvati sul tuo computer. Non esiste una copia sui nostri sistemi.</p></div>
       <div class="scheda"><div class="icona">{ico("seal-check")}</div><h3>Verifica che blocca</h3><p>Il file finale viene riletto da zero. Se un dato oscurato è ancora presente, il salvataggio non avviene.</p></div>
       <div class="scheda"><div class="icona">{ico("list-checks")}</div><h3>Rapporto senza dati</h3><p>Il riepilogo dice cosa è stato tolto e dove, ma non riporta i dati: puoi conservarlo senza creare una nuova copia delle informazioni.</p></div>
+      <div class="scheda"><div class="icona">{ico("fingerprint")}</div><h3>Registro che non si ritocca</h3><p>Ogni operazione è scritta in un registro in cui ogni riga contiene l'impronta della precedente: una modifica si scopre. Se vuoi una prova davanti a terzi, puoi apporre una marca temporale sulle impronte, senza inviare il documento.</p></div>
     </div>
   </div>
 </section>
