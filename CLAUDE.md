@@ -13,5 +13,6 @@ Valgono anche le regole del documento madre `C:\TalorynLabs\CLAUDE.md`.
   (`progetti/pdf-suite-desktop/docs/specifica-v1.md`). Prezzo: non pubblicarlo finché non è confermato.
 - Pubblicazione: GitHub Pages con dominio talorynlabs.it (file `CNAME`). Repository pubblico: mai
   segreti né dati personali nei file.
-- Titolare privacy: Taloryn Labs (contatto privacy@ / info@talorynlabs.it). Da aggiornare quando
-  nascerà la partita IVA o la società.
+- Titolare privacy, gestore del sito e titolare dei diritti indicati sul sito come "Taloryn Labs"
+  (contatto privacy@ / info@talorynlabs.it). Nessun nome di persona nei file pubblici.
+  Da aggiornare quando nascerà la partita IVA o la società.
