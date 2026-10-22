@@ -1,132 +1,169 @@
 <!doctype html>
 <html lang="it">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Taloryn Labs — PDF Suite Desktop</title>
-  <meta name="description" content="PDF Suite Desktop rimuove davvero codici fiscali, IBAN e nomi dai PDF e dai file Word, sul tuo computer e senza internet. Per studi professionali italiani.">
-  <meta name="referrer" content="no-referrer">
-  <link rel="stylesheet" href="stile.css">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%2317243a'/%3E%3Crect x='7' y='13' width='18' height='6' fill='%23ffffff'/%3E%3C/svg%3E">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Taloryn Labs — software per studi professionali</title>
+<meta name="description" content="Taloryn Labs crea software per studi professionali italiani: regole verificabili, dati che restano sul tuo computer, prezzo chiaro e assistenza per iscritto.">
+<meta name="referrer" content="no-referrer">
+<meta name="theme-color" content="#0B0D10">
+<link rel="canonical" href="https://talorynlabs.it/">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/img/icona-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preload" href="/font/montserrat-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/font/montserrat-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/stile.css">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="it_IT">
+<meta property="og:site_name" content="Taloryn Labs">
+<meta property="og:title" content="Taloryn Labs — software per studi professionali">
+<meta property="og:description" content="Taloryn Labs crea software per studi professionali italiani: regole verificabili, dati che restano sul tuo computer, prezzo chiaro e assistenza per iscritto.">
+<meta property="og:url" content="https://talorynlabs.it/">
+<meta property="og:image" content="https://talorynlabs.it/img/anteprima-condivisione.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "Taloryn Labs", "url": "https://talorynlabs.it/", "logo": "https://talorynlabs.it/img/icona-512.png", "email": "info@talorynlabs.it", "description": "Software per studi professionali italiani: regole verificabili, elaborazione sul computer dell'utente."}</script>
 </head>
 <body>
-
+<a class="salta" href="#contenuto">Vai al contenuto</a>
 <header class="testata">
   <div class="contenitore">
-    <a class="marchio" href="/">Taloryn Labs</a>
-    <nav aria-label="Principale"><a href="#lista-attesa">Lista d'attesa</a></nav>
+    <a class="logo" href="/" aria-label="Taloryn Labs, pagina principale"><img src="/img/logo-480.webp" srcset="/img/logo-240.webp 240w, /img/logo-480.webp 480w" sizes="168px" width="168" height="52" alt="Taloryn Labs"></a>
+    <nav class="menu" aria-label="Principale"><a href="/" aria-current="page">Studio</a><a href="/pdf-suite.html">PDF Suite</a><a href="/sicurezza.html">Sicurezza</a><a href="/guide/">Guide</a><a href="/contatti.html">Contatti</a><a class="pulsante-menu" href="/contatti.html#lista-attesa">Lista d'attesa</a></nav>
   </div>
 </header>
-
-<main>
-
-<section class="apertura">
+<main id="contenuto">
+<section class="apertura" aria-labelledby="t-apertura">
   <div class="contenitore">
     <div>
-      <h1>Documenti dei clienti, condivisi senza i loro dati.</h1>
-      <p class="sottotitolo">PDF Suite Desktop toglie codici fiscali, IBAN e nomi da PDF e file Word. Sul tuo computer, senza internet, e controlla che non ne resti traccia nel file.</p>
+      <div class="occhiello">Software per studi professionali</div>
+      <h1 id="t-apertura">Software che non sbaglia in silenzio.</h1>
+      <p class="introduzione" style="margin-top:24px">Taloryn Labs crea programmi per commercialisti, avvocati, consulenti del lavoro, amministratori di condominio e agenzie. Seguono regole scritte e verificabili, lavorano sul tuo computer e, se incontrano un caso che non conoscono, si fermano e te lo dicono.</p>
       <div class="azioni">
-        <a class="pulsante" href="#lista-attesa">Entra nella lista d'attesa</a>
-        <span class="nota">Per studi professionali, in uscita per Windows.</span>
+        <a class="pulsante" href="/pdf-suite.html">Scopri PDF Suite Desktop<svg aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></a>
+        <a class="secondario" href="/contatti.html#lista-attesa">Entra nella lista d'attesa</a>
       </div>
+      <p class="motto">Regole chiare. Dati protetti.</p>
     </div>
-
-    <figure class="documento" aria-labelledby="doc-descrizione">
-      <p id="doc-descrizione" class="visivamente-nascosto">Esempio: in una dichiarazione il nome, il codice fiscale, il comune di nascita e l'IBAN vengono oscurati; l'indirizzo viene evidenziato in giallo per un controllo manuale; la verifica finale conferma che nel file non resta nessun dato oscurato.</p>
-      <div aria-hidden="true">
-        <div class="intestazione-doc">Dichiarazione sostitutiva di certificazione</div>
-        <p>La sottoscritta <span class="dato d1">Laura Bianchi</span>, codice fiscale <span class="dato d2">BNCLRA82M45G388D</span>, nata a <span class="dato d3">Pavia</span>, residente in <span class="dubbio">via dei Mille 14</span>, dichiara di essere titolare del conto corrente</p>
-        <p>IBAN <span class="dato d4">IT60 X054 2811 1010 0000 0123 456</span> presso cui chiede l'accredito delle somme spettanti.</p>
-        <div class="esito">
-          <span><i class="segno nero"></i>4 dati rimossi dal file</span>
-          <span><i class="segno giallo"></i>1 indirizzo da controllare a occhio</span>
-          <span><i class="segno verde"></i>Verifica: nessun dato rimosso è ancora leggibile nel file</span>
-        </div>
-      </div>
-    </figure>
-  </div>
-</section>
-
-<section class="sezione" aria-labelledby="t-coprire">
-  <div class="contenitore">
-    <h2 id="t-coprire">Coprire non è cancellare.</h2>
-    <div class="corpo">
-      <p>Un rettangolo nero disegnato sopra un PDF nasconde il testo allo sguardo, ma spesso il testo resta nel file: basta selezionarlo e copiarlo. Lo stesso vale per i commenti, i metadati e la cronologia delle revisioni nei file Word.</p>
-      <div class="confronto">
-        <div>
-          <h3>Strumenti di copertura</h3>
-          <p>Disegnano sopra il dato. Il file sembra pulito, ma il contenuto originale può essere ancora dentro.</p>
-        </div>
-        <div class="nostro">
-          <h3>PDF Suite Desktop</h3>
-          <p>Toglie il dato dal file, poi rilegge il risultato da zero. Se trova ancora qualcosa, non salva.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="sezione" aria-labelledby="t-come">
-  <div class="contenitore">
-    <h2 id="t-come">Come funziona.</h2>
-    <ol class="passi">
-      <li><h3>Apri il documento</h3><p>PDF con testo o file Word in italiano. Il file non lascia mai il tuo computer.</p></li>
-      <li><h3>Il programma trova i dati</h3><p>Codice fiscale, partita IVA e IBAN vengono riconosciuti con i loro controlli matematici. Nomi e cognomi li indichi tu, con le loro varianti.</p></li>
-      <li><h3>Controlli tu</h3><p>Vedi ogni pagina con le zone proposte. I riferimenti indiretti, come indirizzi e date, sono segnalati in giallo. Approvi, togli o aggiungi.</p></li>
-      <li><h3>Il dato viene rimosso</h3><p>Dal testo, dai metadati, dai commenti, dagli allegati e dalla cronologia delle revisioni.</p></li>
-      <li><h3>Verifica e rapporto</h3><p>Il file finale viene riletto. Ricevi un riepilogo di cosa è stato tolto, pagina per pagina, senza riportare i dati.</p></li>
-    </ol>
-  </div>
-</section>
-
-<section class="sezione" aria-labelledby="t-limiti">
-  <div class="contenitore">
-    <h2 id="t-limiti">Cosa non fa, per ora.</h2>
-    <div class="corpo">
-      <p>La prima versione fa una cosa sola e la fa bene. Preferiamo dirlo prima:</p>
-      <ul class="elenco">
-        <li>non legge i documenti scansionati o fotografati;</li>
-        <li>lavora in italiano e su Windows;</li>
-        <li>elabora un documento alla volta, non intere cartelle;</li>
-        <li>non usa intelligenza artificiale per decidere cosa togliere.</li>
-      </ul>
+    <div class="pannello">
+      <img src="/img/pannello-920.webp" srcset="/img/pannello-460.webp 460w, /img/pannello-920.webp 920w" sizes="(max-width: 980px) 300px, 400px" width="400" height="657" alt="Il simbolo di Taloryn Labs: una T d'oro con una vena luminosa e una sfera alla base, sopra la scritta Taloryn Labs" fetchpriority="high">
     </div>
   </div>
 </section>
 
 <section class="sezione" aria-labelledby="t-principi">
   <div class="contenitore">
-    <h2 id="t-principi">Come lavoriamo.</h2>
-    <div class="principi">
-      <div><h3>Regole, non indovinelli</h3><p>Il nucleo dei nostri programmi segue regole scritte e verificabili. Se incontra un caso che non conosce, si ferma e te lo dice.</p></div>
-      <div><h3>I tuoi dati restano tuoi</h3><p>Niente cloud, niente account, niente pubblicità, nessuna vendita di dati.</p></div>
-      <div><h3>Prezzo chiaro</h3><p>Licenza annuale per postazione, con il prezzo pubblicato su questo sito. Nessun costo nascosto.</p></div>
-      <div><h3>Assistenza per iscritto</h3><p>Rispondiamo via email, con risposte precise che restano agli atti.</p></div>
+    <div class="testa-sezione">
+      <div><div class="occhiello">Come lavoriamo</div><h2 id="t-principi">Quattro promesse che puoi controllare.</h2></div>
+      <p>Chi lavora con i dati dei clienti non può fidarsi di un programma che "più o meno" funziona. Per questo ogni nostro prodotto rispetta queste regole, e le scriviamo qui perché tu possa verificarle.</p>
+    </div>
+    <div class="schede">
+      <div class="scheda"><div class="icona"><svg aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M237.57,133.77l-32-80h0a6,6,0,0,0-6.86-3.63L134,64.52V40a6,6,0,0,0-12,0V67.19l-67.3,15a6,6,0,0,0-4.27,3.63h0v0l-32,80A6.1,6.1,0,0,0,18,168c0,21.86,23.31,30,38,30s38-8.14,38-30a6.1,6.1,0,0,0-.43-2.23L64.19,92.33,122,79.48V210H104a6,6,0,0,0,0,12h48a6,6,0,0,0,0-12H134V76.81l56.21-12.49-27.78,69.45A6.1,6.1,0,0,0,162,136c0,21.86,23.31,30,38,30s38-8.14,38-30A6.1,6.1,0,0,0,237.57,133.77ZM56,186a36.89,36.89,0,0,1-17.48-4.56c-5.37-3.13-8.15-7.18-8.49-12.37l26-64.91,26,64.91C81.06,182.85,62.58,186,56,186Zm144-32a36.89,36.89,0,0,1-17.48-4.56c-5.37-3.13-8.15-7.18-8.49-12.37l26-64.91,26,64.91C225.06,150.85,206.58,154,200,154Z"/></svg></div><h3>Regole, non indovinelli</h3><p>Il cuore dei nostri programmi segue regole scritte e verificabili: a parità di documento, stesso risultato. L'intelligenza artificiale, se c'è, è solo un aiuto facoltativo e non decide mai da sola.</p></div>
+      <div class="scheda"><div class="icona"><svg aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M52.44,36A6,6,0,0,0,43.56,44l40.18,44.2c-.45.87-.9,1.75-1.32,2.64A62,62,0,1,0,72,214h88a85.23,85.23,0,0,0,32.35-6.3L203.56,220a6,6,0,0,0,8.88-8.08ZM160,202H72a50,50,0,1,1,5.9-99.64A86.25,86.25,0,0,0,74,128a6,6,0,0,0,12,0,73.92,73.92,0,0,1,6.44-30.2l91.22,100.34A73.65,73.65,0,0,1,160,202Zm86-74a85.85,85.85,0,0,1-21.85,57.27,6,6,0,0,1-4.47,2,6,6,0,0,1-4.47-10,74,74,0,0,0-99-108.92,6,6,0,1,1-7.11-9.67A86,86,0,0,1,246,128Z"/></svg></div><h3>Sul tuo computer</h3><p>I documenti restano nel tuo studio. Niente cloud, niente account obbligatori, niente pubblicità, nessuna vendita di dati.</p></div>
+      <div class="scheda"><div class="icona"><svg aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M241.91,137.42,142.59,38.1a13.94,13.94,0,0,0-9.9-4.1H40a6,6,0,0,0-6,6v92.69a13.94,13.94,0,0,0,4.1,9.9l99.32,99.32a14,14,0,0,0,19.8,0l84.69-84.69A14,14,0,0,0,241.91,137.42Zm-8.49,11.31-84.69,84.69a2,2,0,0,1-2.83,0L46.59,134.1a2,2,0,0,1-.59-1.41V46h86.69a2,2,0,0,1,1.41.59l99.32,99.31A2,2,0,0,1,233.42,148.73ZM94,84A10,10,0,1,1,84,74,10,10,0,0,1,94,84Z"/></svg></div><h3>Prezzo chiaro</h3><p>Il prezzo di ogni prodotto è pubblicato sul sito, uguale per tutti. Nessun costo nascosto e nessuna trattativa per scoprirlo.</p></div>
+      <div class="scheda"><div class="icona"><svg aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M216,50H40A14,14,0,0,0,26,64V224a13.88,13.88,0,0,0,8.09,12.69A14.11,14.11,0,0,0,40,238a13.87,13.87,0,0,0,9-3.31l.06-.05L82.23,206H216a14,14,0,0,0,14-14V64A14,14,0,0,0,216,50Zm2,142a2,2,0,0,1-2,2H80a6,6,0,0,0-3.92,1.46L41.26,225.53A2,2,0,0,1,38,224V64a2,2,0,0,1,2-2H216a2,2,0,0,1,2,2Zm-52-80a6,6,0,0,1-6,6H96a6,6,0,0,1,0-12h64A6,6,0,0,1,166,112Zm0,32a6,6,0,0,1-6,6H96a6,6,0,0,1,0-12h64A6,6,0,0,1,166,144Z"/></svg></div><h3>Assistenza per iscritto</h3><p>Rispondiamo via email, con risposte precise che restano agli atti e che puoi rileggere quando vuoi.</p></div>
     </div>
   </div>
 </section>
 
-<section class="sezione attesa" id="lista-attesa" aria-labelledby="t-attesa">
+<section class="sezione scura" aria-labelledby="t-prodotto">
   <div class="contenitore">
-    <h2 id="t-attesa">Entra nella lista d'attesa.</h2>
-    <div class="corpo">
-      <p>Scrivici da un indirizzo del tuo studio. Ti avvisiamo una sola volta, quando PDF Suite Desktop sarà disponibile.</p>
-      <div class="azioni">
-        <a class="pulsante" href="mailto:info@talorynlabs.it?subject=Lista%20d'attesa%20PDF%20Suite%20Desktop&amp;body=Vorrei%20essere%20avvisato%20quando%20PDF%20Suite%20Desktop%20sar%C3%A0%20disponibile.%0A%0ATipo%20di%20studio%20(facoltativo)%3A%20">Scrivi a info@talorynlabs.it</a>
+    <div class="prodotto">
+      <div class="testo-prodotto">
+        <div class="occhiello">Il primo prodotto</div>
+        <h2 id="t-prodotto">PDF Suite Desktop</h2>
+        <p class="corpo" style="margin-top:16px">Toglie davvero codici fiscali, IBAN e nomi da PDF e file Word, sul tuo computer e senza internet. Poi rilegge il file da zero e controlla che non ne resti traccia.</p>
+        <ul class="elenco-segni">
+          <li><svg aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M172.24,99.76a6,6,0,0,1,0,8.48l-56,56a6,6,0,0,1-8.48,0l-24-24a6,6,0,0,1,8.48-8.48L112,151.51l51.76-51.75A6,6,0,0,1,172.24,99.76ZM230,128A102,102,0,1,1,128,26,102.12,102.12,0,0,1,230,128Zm-12,0a90,90,0,1,0-90,90A90.1,90.1,0,0,0,218,128Z"/></svg><span>Riconosce codice fiscale, partita IVA e IBAN anche con il loro carattere di controllo.</span></li>
+          <li><svg aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M172.24,99.76a6,6,0,0,1,0,8.48l-56,56a6,6,0,0,1-8.48,0l-24-24a6,6,0,0,1,8.48-8.48L112,151.51l51.76-51.75A6,6,0,0,1,172.24,99.76ZM230,128A102,102,0,1,1,128,26,102.12,102.12,0,0,1,230,128Zm-12,0a90,90,0,1,0-90,90A90.1,90.1,0,0,0,218,128Z"/></svg><span>Rimuove il dato dal file, non lo copre soltanto: anche da metadati, commenti e revisioni.</span></li>
+          <li><svg aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M172.24,99.76a6,6,0,0,1,0,8.48l-56,56a6,6,0,0,1-8.48,0l-24-24a6,6,0,0,1,8.48-8.48L112,151.51l51.76-51.75A6,6,0,0,1,172.24,99.76ZM230,128A102,102,0,1,1,128,26,102.12,102.12,0,0,1,230,128Zm-12,0a90,90,0,1,0-90,90A90.1,90.1,0,0,0,218,128Z"/></svg><span>Se dopo la verifica un dato è ancora leggibile, il file non viene salvato.</span></li>
+        </ul>
+        <div class="stato"><i></i>In sviluppo · per Windows 10 e 11</div>
+        <div class="azioni"><a class="pulsante" href="/pdf-suite.html">Come funziona<svg aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></a></div>
       </div>
-      <p class="nota">Usiamo il tuo indirizzo solo per questo avviso. Nessun modulo, nessun servizio esterno. Dettagli nell'<a href="privacy.html">informativa privacy</a>.</p>
+      <div class="figura-prodotto">
+        <figure class="documento" aria-label="Esempio di documento oscurato">
+          <div aria-hidden="true">
+            <div class="intestazione-doc">Dichiarazione sostitutiva</div>
+            <p>La sottoscritta <span class="dato">Laura Bianchi</span>, codice fiscale <span class="dato">BNCLRA82M45G388D</span>, residente in <span class="dubbio">via dei Mille 14</span>, chiede l'accredito sul conto IBAN <span class="dato">IT60 X054 2811 1010 0000 0123 456</span>.</p>
+            <div class="esito">
+              <span><i class="segno nero"></i>3 dati rimossi dal file</span>
+              <span><i class="segno giallo"></i>1 indirizzo da controllare a occhio</span>
+              <span><i class="segno verde"></i>Verifica superata</span>
+            </div>
+          </div>
+        </figure>
+      </div>
     </div>
   </div>
 </section>
 
-</main>
+<section class="sezione" aria-labelledby="t-nome">
+  <div class="contenitore racconto">
+    <div class="marchio-grande"><img src="/img/marchio-600.webp" srcset="/img/marchio-300.webp 300w, /img/marchio-600.webp 600w" sizes="300px" width="300" height="352"  alt="La T d'oro di Taloryn Labs" loading="lazy" decoding="async"></div>
+    <div>
+      <div class="occhiello">Il nome</div>
+      <h2 id="t-nome">Da Talos, il custode di bronzo.</h2>
+      <div class="corpo" style="margin-top:20px">
+        <p>Nel mito greco Talos era il gigante di bronzo che sorvegliava Creta. Secondo un antico racconto portava di villaggio in villaggio le leggi dell'isola, incise su tavole di bronzo, perché fossero rispettate da tutti allo stesso modo.</p>
+        <p>Nel suo corpo scorreva un'unica vena, chiusa da un chiodo. La nostra T d'oro viene da lì: la traversa come le tavole delle leggi, la vena luminosa al centro, la sfera alla base.</p>
+      </div>
+      <blockquote>Un custode affidabile non improvvisa: applica la regola, e quando la regola non basta, chiama qualcuno.</blockquote>
+    </div>
+  </div>
+</section>
 
+<section class="sezione scura" aria-labelledby="t-per-chi">
+  <div class="contenitore due-colonne">
+    <div><div class="occhiello">Per chi</div><h2 id="t-per-chi">Per chi tratta ogni giorno i dati degli altri.</h2></div>
+    <div>
+      <p class="corpo">Lavoriamo solo per studi e imprese, con licenza per postazione. Conosciamo i documenti che girano in uno studio italiano: dichiarazioni, buste paga, atti, verbali, contratti.</p>
+      <div class="professioni">
+        <span><svg aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M176,58H80a6,6,0,0,0-6,6v48a6,6,0,0,0,6,6h96a6,6,0,0,0,6-6V64A6,6,0,0,0,176,58Zm-6,48H86V70h84Zm30-80H56A14,14,0,0,0,42,40V216a14,14,0,0,0,14,14H200a14,14,0,0,0,14-14V40A14,14,0,0,0,200,26Zm2,190a2,2,0,0,1-2,2H56a2,2,0,0,1-2-2V40a2,2,0,0,1,2-2H200a2,2,0,0,1,2,2ZM98,148a10,10,0,1,1-10-10A10,10,0,0,1,98,148Zm40,0a10,10,0,1,1-10-10A10,10,0,0,1,138,148Zm40,0a10,10,0,1,1-10-10A10,10,0,0,1,178,148ZM98,188a10,10,0,1,1-10-10A10,10,0,0,1,98,188Zm40,0a10,10,0,1,1-10-10A10,10,0,0,1,138,188Zm40,0a10,10,0,1,1-10-10A10,10,0,0,1,178,188Z"/></svg>Commercialisti</span>
+        <span><svg aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M237.57,133.77l-32-80h0a6,6,0,0,0-6.86-3.63L134,64.52V40a6,6,0,0,0-12,0V67.19l-67.3,15a6,6,0,0,0-4.27,3.63h0v0l-32,80A6.1,6.1,0,0,0,18,168c0,21.86,23.31,30,38,30s38-8.14,38-30a6.1,6.1,0,0,0-.43-2.23L64.19,92.33,122,79.48V210H104a6,6,0,0,0,0,12h48a6,6,0,0,0,0-12H134V76.81l56.21-12.49-27.78,69.45A6.1,6.1,0,0,0,162,136c0,21.86,23.31,30,38,30s38-8.14,38-30A6.1,6.1,0,0,0,237.57,133.77ZM56,186a36.89,36.89,0,0,1-17.48-4.56c-5.37-3.13-8.15-7.18-8.49-12.37l26-64.91,26,64.91C81.06,182.85,62.58,186,56,186Zm144-32a36.89,36.89,0,0,1-17.48-4.56c-5.37-3.13-8.15-7.18-8.49-12.37l26-64.91,26,64.91C225.06,150.85,206.58,154,200,154Z"/></svg>Avvocati</span>
+        <span><svg aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M198,112a6,6,0,0,1-6,6H152a6,6,0,0,1,0-12h40A6,6,0,0,1,198,112Zm-6,26H152a6,6,0,0,0,0,12h40a6,6,0,0,0,0-12Zm38-82V200a14,14,0,0,1-14,14H40a14,14,0,0,1-14-14V56A14,14,0,0,1,40,42H216A14,14,0,0,1,230,56Zm-12,0a2,2,0,0,0-2-2H40a2,2,0,0,0-2,2V200a2,2,0,0,0,2,2H216a2,2,0,0,0,2-2ZM133.81,166.51a6,6,0,0,1-11.62,3C119.34,158.38,108.08,150,96,150s-23.33,8.38-26.19,19.5a6,6,0,0,1-11.62-3A38,38,0,0,1,76.78,143a30,30,0,1,1,38.45,0A38,38,0,0,1,133.81,166.51ZM96,138a18,18,0,1,0-18-18A18,18,0,0,0,96,138Z"/></svg>Consulenti del lavoro</span>
+        <span><svg aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M240,210H222V96a14,14,0,0,0-14-14H142V32a14,14,0,0,0-21.77-11.64l-80,53.33A14,14,0,0,0,34,85.34V210H16a6,6,0,0,0,0,12H240a6,6,0,0,0,0-12ZM208,94a2,2,0,0,1,2,2V210H142V94ZM46,85.34a2,2,0,0,1,.89-1.66l80-53.34A2,2,0,0,1,130,32V210H46ZM110,112v16a6,6,0,0,1-12,0V112a6,6,0,0,1,12,0Zm-32,0v16a6,6,0,0,1-12,0V112a6,6,0,0,1,12,0Zm0,56v16a6,6,0,0,1-12,0V168a6,6,0,0,1,12,0Zm32,0v16a6,6,0,0,1-12,0V168a6,6,0,0,1,12,0Z"/></svg>Amministratori di condominio</span>
+        <span><svg aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M106,112a6,6,0,0,1,6-6h32a6,6,0,0,1,0,12H112A6,6,0,0,1,106,112ZM230,72V200a14,14,0,0,1-14,14H40a14,14,0,0,1-14-14V72A14,14,0,0,1,40,58H82V48a22,22,0,0,1,22-22h48a22,22,0,0,1,22,22V58h42A14,14,0,0,1,230,72ZM94,58h68V48a10,10,0,0,0-10-10H104A10,10,0,0,0,94,48ZM38,72v42.79A186,186,0,0,0,128,138a185.91,185.91,0,0,0,90-23.22V72a2,2,0,0,0-2-2H40A2,2,0,0,0,38,72ZM218,200V128.37A198.12,198.12,0,0,1,128,150a198.05,198.05,0,0,1-90-21.62V200a2,2,0,0,0,2,2H216A2,2,0,0,0,218,200Z"/></svg>Agenzie</span>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="fascia" aria-labelledby="t-fascia">
+  <div class="contenitore">
+    <h2 id="t-fascia">Vuoi sapere quando PDF Suite Desktop sarà pronto?</h2>
+    <p>Scrivici da un indirizzo del tuo studio. Ti avvisiamo una sola volta, quando il programma sarà disponibile.</p>
+    <div class="azioni"><a class="pulsante" href="mailto:info@talorynlabs.it?subject=Lista%20d%27attesa%20PDF%20Suite%20Desktop&amp;body=Vorrei%20essere%20avvisato%20quando%20PDF%20Suite%20Desktop%20sar%C3%A0%20disponibile.%0A%0ATipo%20di%20studio%20(facoltativo)%3A%20"><svg aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM203.43,64,128,133.15,52.57,64ZM216,192H40V74.19l82.59,75.71a8,8,0,0,0,10.82,0L216,74.19V192Z"/></svg>Entra nella lista d'attesa</a></div>
+  </div>
+</section>
+</main>
 <footer class="piede">
   <div class="contenitore">
-    <p>Taloryn Labs, <a href="mailto:info@talorynlabs.it">info@talorynlabs.it</a></p>
-    <p>Questo sito non usa cookie né strumenti di tracciamento. <a href="privacy.html">Informativa privacy</a></p>
+    <div class="griglia">
+      <div>
+        <img src="/img/logo-480.webp" width="176" height="54" alt="Taloryn Labs">
+        <p>Software per studi professionali. Regole chiare, dati protetti.</p>
+        <p><a href="mailto:info@talorynlabs.it">info@talorynlabs.it</a></p>
+      </div>
+      <div>
+        <h2>Studio</h2>
+        <ul><li><a href="/">Chi siamo</a></li><li><a href="/sicurezza.html">Sicurezza</a></li><li><a href="/contatti.html">Contatti</a></li></ul>
+      </div>
+      <div>
+        <h2>Prodotto</h2>
+        <ul><li><a href="/pdf-suite.html">PDF Suite Desktop</a></li><li><a href="/contatti.html#lista-attesa">Lista d'attesa</a></li><li><a href="/guide/">Guide</a></li></ul>
+      </div>
+      <div>
+        <h2>Note legali</h2>
+        <ul><li><a href="/privacy.html">Informativa privacy</a></li><li><a href="/termini.html">Condizioni d'uso</a></li></ul>
+      </div>
+    </div>
+    <div class="fondo">
+      <span>© 2026 Taloryn Labs - Tutti i diritti riservati.</span>
+      <span>Questo sito non usa cookie né strumenti di tracciamento.</span>
+    </div>
   </div>
 </footer>
-
 </body>
 </html>
