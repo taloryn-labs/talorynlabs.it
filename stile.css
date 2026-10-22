@@ -79,6 +79,17 @@ p{margin:0 0 1em}
 .apertura .pannello{justify-self:center;width:100%;max-width:400px}
 .apertura .pannello img{width:100%;height:auto}
 .motto{margin-top:46px;font-size:12.5px;font-weight:500;letter-spacing:.34em;color:var(--testo-2);text-transform:uppercase}
+/* Su computer la prima parte sta tutta nello schermo, qualunque sia l'altezza della finestra */
+@media (min-width:981px){
+  .apertura .contenitore{min-height:calc(100vh - 78px);min-height:calc(100svh - 78px);padding-top:28px;padding-bottom:28px}
+  .apertura .pannello{max-width:none;display:flex;justify-content:center}
+  .apertura .pannello img{width:auto;height:clamp(380px,calc(100vh - 136px),657px);height:clamp(380px,calc(100svh - 136px),657px)}
+  .apertura h1{font-size:clamp(34px,min(4.6vw,7.4vh),56px)}
+  .apertura .introduzione{margin-top:clamp(14px,2.6vh,24px)!important}
+  .apertura .azioni{margin-top:clamp(20px,3.6vh,34px)}
+  .apertura .motto{margin-top:clamp(20px,4.4vh,46px)}
+  .apertura .occhiello{margin-bottom:clamp(12px,2.4vh,22px)}
+}
 
 /* Apertura delle pagine interne */
 .testa-pagina{background:radial-gradient(50% 120% at 90% 0%,rgba(212,175,55,.12) 0%,rgba(212,175,55,0) 70%),var(--nero-pieno);border-bottom:1px solid var(--linea)}
