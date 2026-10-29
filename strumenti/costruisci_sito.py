@@ -9,7 +9,7 @@ from pathlib import Path
 OUT = Path(sys.argv[1]); PH = Path(sys.argv[2])
 DOMINIO = "https://talorynlabs.it"
 EMAIL = "info@talorynlabs.it"
-AGGIORNATO = "22 ottobre 2026"
+AGGIORNATO = "29 ottobre 2026"
 ANNO = "2026"
 
 
@@ -20,11 +20,11 @@ def ico(nome, peso="light"):
     return svg
 
 
-ATTESA = ("mailto:info@talorynlabs.it?subject=Lista%20d%27attesa%20PDF%20Suite%20Desktop"
-          "&amp;body=Vorrei%20essere%20avvisato%20quando%20PDF%20Suite%20Desktop%20sar%C3%A0%20disponibile."
+ATTESA = ("mailto:info@talorynlabs.it?subject=Lista%20d%27attesa%20Riserbo"
+          "&amp;body=Vorrei%20essere%20avvisato%20quando%20Riserbo%20sar%C3%A0%20disponibile."
           "%0A%0ATipo%20di%20studio%20(facoltativo)%3A%20")
 
-MENU = [("/", "Studio"), ("/pdf-suite.html", "PDF Suite"), ("/sicurezza.html", "Sicurezza"),
+MENU = [("/", "Studio"), ("/riserbo.html", "Riserbo"), ("/sicurezza.html", "Sicurezza"),
         ("/guide/", "Guide"), ("/contatti.html", "Contatti")]
 
 
@@ -54,7 +54,7 @@ PIEDE = f'''<footer class="piede">
       </div>
       <div>
         <h2>Prodotto</h2>
-        <ul><li><a href="/pdf-suite.html">PDF Suite Desktop</a></li><li><a href="/contatti.html#lista-attesa">Lista d'attesa</a></li><li><a href="/guide/">Guide</a></li></ul>
+        <ul><li><a href="/riserbo.html">Riserbo</a></li><li><a href="/contatti.html#lista-attesa">Lista d'attesa</a></li><li><a href="/guide/">Guide</a></li></ul>
       </div>
       <div>
         <h2>Note legali</h2>
@@ -70,7 +70,7 @@ PIEDE = f'''<footer class="piede">
 
 FASCIA = f'''<section class="fascia" aria-labelledby="t-fascia">
   <div class="contenitore">
-    <h2 id="t-fascia">Vuoi sapere quando PDF Suite Desktop sarà pronto?</h2>
+    <h2 id="t-fascia">Vuoi sapere quando Riserbo sarà pronto?</h2>
     <p>Scrivici da un indirizzo del tuo studio. Ti avvisiamo una sola volta, quando il programma sarà disponibile.</p>
     <div class="azioni"><a class="pulsante" href="{ATTESA}">{ico("envelope-simple", "regular")}Entra nella lista d'attesa</a></div>
   </div>
@@ -137,7 +137,7 @@ home = f'''<section class="apertura" aria-labelledby="t-apertura">
       <h1 id="t-apertura">Software che non sbaglia in silenzio.</h1>
       <p class="introduzione" style="margin-top:24px">Taloryn Labs crea programmi per commercialisti, avvocati, consulenti del lavoro, amministratori di condominio e agenzie. Seguono regole scritte e verificabili, lavorano sul tuo computer e, se incontrano un caso che non conoscono, si fermano e te lo dicono.</p>
       <div class="azioni">
-        <a class="pulsante" href="/pdf-suite.html">Scopri PDF Suite Desktop{ico("arrow-right", "regular")}</a>
+        <a class="pulsante" href="/riserbo.html">Scopri Riserbo{ico("arrow-right", "regular")}</a>
         <a class="secondario" href="/contatti.html#lista-attesa">Entra nella lista d'attesa</a>
       </div>
       <p class="motto">Regole chiare. Dati protetti.</p>
@@ -168,7 +168,7 @@ home = f'''<section class="apertura" aria-labelledby="t-apertura">
     <div class="prodotto">
       <div class="testo-prodotto">
         <div class="occhiello">Il primo prodotto</div>
-        <h2 id="t-prodotto">PDF Suite Desktop</h2>
+        <h2 id="t-prodotto">Riserbo</h2>
         <p class="corpo" style="margin-top:16px">Toglie davvero codici fiscali, IBAN e nomi da PDF e file Word, sul tuo computer e senza internet. Poi rilegge il file da zero e controlla che non ne resti traccia.</p>
         <ul class="elenco-segni">
           <li>{ico("check-circle")}<span>Riconosce codice fiscale, partita IVA e IBAN anche con il loro carattere di controllo.</span></li>
@@ -176,7 +176,7 @@ home = f'''<section class="apertura" aria-labelledby="t-apertura">
           <li>{ico("check-circle")}<span>Se dopo la verifica un dato è ancora leggibile, il file non viene salvato.</span></li>
         </ul>
         <div class="stato"><i></i>In sviluppo · per Windows 10 e 11</div>
-        <div class="azioni"><a class="pulsante" href="/pdf-suite.html">Come funziona{ico("arrow-right", "regular")}</a></div>
+        <div class="azioni"><a class="pulsante" href="/riserbo.html">Come funziona{ico("arrow-right", "regular")}</a></div>
       </div>
       <div class="figura-prodotto">
         <figure class="documento" aria-label="Esempio di documento oscurato">
@@ -229,13 +229,13 @@ pagina("index.html", "Taloryn Labs — software per studi professionali",
        "Taloryn Labs crea software per studi professionali italiani: regole verificabili, dati che restano sul tuo computer, prezzo chiaro e assistenza per iscritto.",
        "/", home, extra_head=f'<script type="application/ld+json">{ORG}</script>\n')
 
-# ------------------------------------------------------------------ PDF SUITE
+# ------------------------------------------------------------------ RISERBO
 pdf = f'''<section class="testa-pagina con-figura" aria-labelledby="t-pdf">
   <div class="contenitore">
     <div>
-      <div class="occhiello">PDF Suite Desktop</div>
+      <div class="occhiello">Riserbo</div>
       <h1 id="t-pdf">Documenti dei clienti, condivisi senza i loro dati.</h1>
-      <p class="introduzione" style="margin-top:24px">PDF Suite Desktop toglie codici fiscali, IBAN e nomi da PDF e file Word in italiano. Lavora sul tuo computer, senza internet, e prima di salvare controlla che nel file non ne resti traccia.</p>
+      <p class="introduzione" style="margin-top:24px">Riserbo toglie codici fiscali, IBAN e nomi da PDF e file Word in italiano. Lavora sul tuo computer, senza internet, e prima di salvare controlla che nel file non ne resti traccia.</p>
       <div class="stato"><i></i>In sviluppo · per Windows 10 e 11</div>
       <div class="azioni">
         <a class="pulsante" href="{ATTESA}">{ico("envelope-simple", "regular")}Entra nella lista d'attesa</a>
@@ -272,7 +272,7 @@ pdf = f'''<section class="testa-pagina con-figura" aria-labelledby="t-pdf">
   <div class="contenitore">
     <div class="confronto">
       <div class="loro"><h3>{ico("prohibit")}Strumenti di copertura</h3><p>Disegnano sopra il dato. Il file sembra pulito, ma il contenuto originale può essere ancora dentro.</p></div>
-      <div class="nostro"><h3>{ico("seal-check")}PDF Suite Desktop</h3><p>Toglie il dato dal file, poi rilegge il risultato da zero. Se trova ancora qualcosa, non salva.</p></div>
+      <div class="nostro"><h3>{ico("seal-check")}Riserbo</h3><p>Toglie il dato dal file, poi rilegge il risultato da zero. Se trova ancora qualcosa, non salva.</p></div>
     </div>
   </div>
 </section>
@@ -319,7 +319,7 @@ pdf = f'''<section class="testa-pagina con-figura" aria-labelledby="t-pdf">
     <div>
       <div class="occhiello">Che cosa toglie</div>
       <h2 id="t-toglie">Anche quello che non si vede.</h2>
-      <p class="corpo" style="margin-top:18px">Un file contiene molto più di quello che appare sulla pagina. PDF Suite Desktop pulisce anche le parti nascoste, e alla fine ti consegna un rapporto.</p>
+      <p class="corpo" style="margin-top:18px">Un file contiene molto più di quello che appare sulla pagina. Riserbo pulisce anche le parti nascoste, e alla fine ti consegna un rapporto.</p>
     </div>
     <ul class="elenco-segni">
       <li>{ico("eraser")}<span><strong>Il testo oscurato</strong>, che viene rimosso dal file e non solo coperto.</span></li>
@@ -375,9 +375,9 @@ pdf = f'''<section class="testa-pagina con-figura" aria-labelledby="t-pdf">
     </div>
   </div>
 </section>'''
-pagina("pdf-suite.html", "PDF Suite Desktop — oscuramento vero di PDF e Word | Taloryn Labs",
-       "PDF Suite Desktop rimuove davvero codici fiscali, IBAN e nomi dai PDF e dai file Word, sul tuo computer e senza internet, e verifica che non ne resti traccia.",
-       "/pdf-suite.html", pdf)
+pagina("riserbo.html", "Riserbo — oscuramento vero di PDF e Word | Taloryn Labs",
+       "Riserbo rimuove davvero codici fiscali, IBAN e nomi dai PDF e dai file Word, sul tuo computer e senza internet, e verifica che non ne resti traccia.",
+       "/riserbo.html", pdf)
 
 # ------------------------------------------------------------------ SICUREZZA
 sic = f'''<section class="testa-pagina" aria-labelledby="t-sic">
@@ -391,7 +391,7 @@ sic = f'''<section class="testa-pagina" aria-labelledby="t-sic">
 <section class="sezione" aria-labelledby="t-programma">
   <div class="contenitore">
     <div class="testa-sezione">
-      <div><div class="occhiello">Il programma</div><h2 id="t-programma">Che cosa fa PDF Suite Desktop con i tuoi file.</h2></div>
+      <div><div class="occhiello">Il programma</div><h2 id="t-programma">Che cosa fa Riserbo con i tuoi file.</h2></div>
       <p>Queste regole fanno parte della specifica del prodotto, non sono promesse di marketing.</p>
     </div>
     <div class="schede">
@@ -553,7 +553,7 @@ articolo("controllare-pdf-oscurato.html", *g["controllare-pdf-oscurato.html"], c
 <p>Attenzione: Microsoft avverte che il contenuto rimosso in questo modo potrebbe non essere recuperabile con il comando Annulla. Per questo è importante lavorare su una copia. Prima di inviare, controlla anche la scheda <strong>Revisione</strong>: se ci sono revisioni non accettate, il testo precedente è ancora nel file.</p>
 
 <h2>Se un controllo fallisce</h2>
-<p>Non basta coprire di nuovo. Il dato va tolto dal file, e il documento va controllato un'altra volta dall'inizio. È esattamente il lavoro che PDF Suite Desktop fa in automatico: rimuove il dato, pulisce le parti nascoste e rilegge il file prima di salvarlo.</p>
+<p>Non basta coprire di nuovo. Il dato va tolto dal file, e il documento va controllato un'altra volta dall'inizio. È esattamente il lavoro che Riserbo fa in automatico: rimuove il dato, pulisce le parti nascoste e rilegge il file prima di salvarlo.</p>
 ''')
 
 articolo("codici-di-controllo.html", *g["codici-di-controllo.html"], corpo='''
@@ -579,7 +579,7 @@ articolo("codici-di-controllo.html", *g["codici-di-controllo.html"], corpo='''
 
 <h2>Che cosa non dice il controllo</h2>
 <p>Un codice che supera il controllo è <strong>scritto correttamente</strong>, ma il calcolo non dice se esiste davvero o a chi appartiene. Per oscurare un documento non serve saperlo: basta sapere con certezza che quel dato è un codice fiscale, una partita IVA o un IBAN, e toglierlo.</p>
-<p>È il principio su cui si basa PDF Suite Desktop: dove esiste un controllo matematico lo usa, e quello che non può verificare con certezza lo segnala a te.</p>
+<p>È il principio su cui si basa Riserbo: dove esiste un controllo matematico lo usa, e quello che non può verificare con certezza lo segnala a te.</p>
 ''')
 
 # ------------------------------------------------------------------ CONTATTI
@@ -601,7 +601,7 @@ contatti = f'''<section class="testa-pagina" aria-labelledby="t-contatti">
 </section>
 <section class="sezione scura" id="lista-attesa" aria-labelledby="t-attesa">
   <div class="contenitore due-colonne">
-    <div><div class="occhiello">Lista d'attesa</div><h2 id="t-attesa">Entra nella lista d'attesa di PDF Suite Desktop.</h2></div>
+    <div><div class="occhiello">Lista d'attesa</div><h2 id="t-attesa">Entra nella lista d'attesa di Riserbo.</h2></div>
     <div class="corpo">
       <p>Scrivici da un indirizzo del tuo studio. Ti avvisiamo <strong>una sola volta</strong>, quando il programma sarà disponibile. Se vuoi, indicaci che tipo di studio sei: ci aiuta a preparare i documenti di prova giusti.</p>
       <div class="azioni" style="margin-top:20px"><a class="pulsante" href="{ATTESA}">{ico("envelope-simple", "regular")}Scrivi a info@talorynlabs.it</a></div>
@@ -610,7 +610,7 @@ contatti = f'''<section class="testa-pagina" aria-labelledby="t-contatti">
   </div>
 </section>'''
 pagina("contatti.html", "Contatti — Taloryn Labs",
-       "Scrivi a Taloryn Labs: informazioni, assistenza, privacy e lista d'attesa di PDF Suite Desktop. Rispondiamo per iscritto.",
+       "Scrivi a Taloryn Labs: informazioni, assistenza, privacy e lista d'attesa di Riserbo. Rispondiamo per iscritto.",
        "/contatti.html", contatti, fascia=False)
 
 # ------------------------------------------------------------------ PRIVACY
@@ -633,7 +633,7 @@ privacy = f'''<section class="testa-pagina" aria-labelledby="t-privacy">
     <h2>Email e lista d'attesa</h2>
     <p>Se ci scrivi, per una domanda o per entrare nella lista d'attesa, trattiamo il tuo indirizzo email e quello che scegli di scriverci nel messaggio.</p>
     <ul>
-      <li><strong>Perché:</strong> per risponderti e, se ti iscrivi alla lista d'attesa, per avvisarti una sola volta quando PDF Suite Desktop sarà disponibile.</li>
+      <li><strong>Perché:</strong> per risponderti e, se ti iscrivi alla lista d'attesa, per avvisarti una sola volta quando Riserbo sarà disponibile.</li>
       <li><strong>Base giuridica:</strong> la tua richiesta (art. 6, par. 1, lett. b del Regolamento UE 2016/679).</li>
       <li><strong>Dove:</strong> nella nostra casella di posta presso il fornitore del dominio talorynlabs.it. Non usiamo servizi di newsletter né moduli di terzi.</li>
       <li><strong>Per quanto:</strong> per la lista d'attesa fino all'invio dell'avviso, e comunque non oltre 24 mesi; poi il messaggio viene cancellato.</li>
@@ -643,7 +643,7 @@ privacy = f'''<section class="testa-pagina" aria-labelledby="t-privacy">
     <h2>I tuoi diritti</h2>
     <p>Puoi chiedere in qualsiasi momento di vedere, correggere o cancellare i tuoi dati, oppure di essere tolto dalla lista, scrivendo a <a href="mailto:privacy@talorynlabs.it">privacy@talorynlabs.it</a>. Puoi anche presentare reclamo al Garante per la protezione dei dati personali (garanteprivacy.it).</p>
 
-    <h2>Il programma PDF Suite Desktop</h2>
+    <h2>Il programma Riserbo</h2>
     <p>Il programma elabora i documenti solo sul tuo computer e non si collega a internet: i documenti che apri non arrivano mai a noi.</p>
   </div>
 </section>'''
@@ -665,10 +665,10 @@ termini = f'''<section class="testa-pagina" aria-labelledby="t-termini">
     <p>Il sito talorynlabs.it è gestito da Taloryn Labs. Contatto: <a href="mailto:{EMAIL}">{EMAIL}</a>.</p>
 
     <h2>A cosa serve il sito</h2>
-    <p>Il sito presenta lo studio e i suoi prodotti. Al momento non vende nulla: PDF Suite Desktop è in sviluppo e le descrizioni indicano come sarà il prodotto secondo la specifica approvata. Le funzioni e i tempi possono cambiare prima dell'uscita; le eventuali modifiche saranno riportate su queste pagine.</p>
+    <p>Il sito presenta lo studio e i suoi prodotti. Al momento non vende nulla: Riserbo è in sviluppo e le descrizioni indicano come sarà il prodotto secondo la specifica approvata. Le funzioni e i tempi possono cambiare prima dell'uscita; le eventuali modifiche saranno riportate su queste pagine.</p>
 
     <h2>Licenza dei programmi</h2>
-    <p>Le condizioni di licenza di PDF Suite Desktop, il prezzo e le condizioni della prova gratuita saranno pubblicati su questo sito prima dell'uscita, e andranno accettati al momento dell'acquisto. Queste condizioni d'uso riguardano solo il sito.</p>
+    <p>Le condizioni di licenza di Riserbo, il prezzo e le condizioni della prova gratuita saranno pubblicati su questo sito prima dell'uscita, e andranno accettati al momento dell'acquisto. Queste condizioni d'uso riguardano solo il sito.</p>
 
     <h2>Contenuti e guide</h2>
     <p>Le guide e gli altri testi hanno scopo informativo. Li scriviamo con cura e li aggiorniamo, ma non sono una consulenza legale, fiscale o tecnica sul tuo caso specifico.</p>
@@ -698,8 +698,24 @@ nf = f'''<section class="testa-pagina" aria-labelledby="t-404">
 </section>'''
 pagina("404.html", "Pagina non trovata — Taloryn Labs", "La pagina cercata non esiste.", "", nf, fascia=False)
 
+# ------------------------------------------------------------------ vecchio indirizzo
+# il prodotto si chiamava "PDF Suite Desktop" (nome di lavoro, cambiato il 29 ottobre 2026): chi ha il
+# vecchio collegamento arriva alla pagina nuova (rimando HTML, nessuno script; non è nella mappa del sito)
+(OUT / "pdf-suite.html").write_text(f'''<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<title>Riserbo — Taloryn Labs</title>
+<meta name="robots" content="noindex">
+<link rel="canonical" href="{DOMINIO}/riserbo.html">
+<meta http-equiv="refresh" content="0; url=/riserbo.html">
+</head>
+<body><p>La pagina si è spostata: <a href="/riserbo.html">Riserbo</a>.</p></body>
+</html>
+''', encoding="utf-8")
+
 # ------------------------------------------------------------------ file di servizio
-pagine = ["", "pdf-suite.html", "sicurezza.html", "guide/", *[f"guide/{f}" for f, *_ in GUIDE],
+pagine = ["", "riserbo.html", "sicurezza.html", "guide/", *[f"guide/{f}" for f, *_ in GUIDE],
           "contatti.html", "privacy.html", "termini.html"]
 (OUT / "sitemap.xml").write_text(
     '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'

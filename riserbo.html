@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Riserbo — oscuramento vero di PDF e Word | Taloryn Labs</title>
+<meta name="description" content="Riserbo rimuove davvero codici fiscali, IBAN e nomi dai PDF e dai file Word, sul tuo computer e senza internet, e verifica che non ne resti traccia.">
+<meta name="referrer" content="no-referrer">
+<meta name="theme-color" content="#0B0D10">
+<link rel="canonical" href="https://talorynlabs.it/riserbo.html">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/img/icona-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preload" href="/font/montserrat-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/font/montserrat-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/stile.css">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="it_IT">
+<meta property="og:site_name" content="Taloryn Labs">
+<meta property="og:title" content="Riserbo — oscuramento vero di PDF e Word | Taloryn Labs">
+<meta property="og:description" content="Riserbo rimuove davvero codici fiscali, IBAN e nomi dai PDF e dai file Word, sul tuo computer e senza internet, e verifica che non ne resti traccia.">
+<meta property="og:url" content="https://talorynlabs.it/riserbo.html">
+<meta property="og:image" content="https://talorynlabs.it/img/anteprima-condivisione.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
+<header class="testata">
+  <div class="contenitore">
+    <a class="logo" href="/" aria-label="Taloryn Labs, pagina principale"><img src="/img/logo-480.webp" srcset="/img/logo-240.webp 240w, /img/logo-480.webp 480w" sizes="168px" width="168" height="52" alt="Taloryn Labs"></a>
+    <nav class="menu" aria-label="Principale"><a href="/">Studio</a><a href="/riserbo.html" aria-current="page">Riserbo</a><a href="/sicurezza.html">Sicurezza</a><a href="/guide/">Guide</a><a href="/contatti.html">Contatti</a><a class="pulsante-menu" href="/contatti.html#lista-attesa">Lista d'attesa</a></nav>
+  </div>
+</header>
+<main id="contenuto">
+<section class="testa-pagina con-figura" aria-labelledby="t-pdf">
+  <div class="contenitore">
+    <div>
+      <div class="occhiello">Riserbo</div>
+      <h1 id="t-pdf">Documenti dei clienti, condivisi senza i loro dati.</h1>
+      <p class="introduzione" style="margin-top:24px">Riserbo toglie codici fiscali, IBAN e nomi da PDF e file Word in italiano. Lavora sul tuo computer, senza internet, e prima di salvare controlla che nel file non ne resti traccia.</p>
+      <div class="stato"><i></i>In sviluppo · per Windows 10 e 11</div>
+      <div class="azioni">
+        <a class="pulsante" href="mailto:info@talorynlabs.it?subject=Lista%20d%27attesa%20Riserbo&amp;body=Vorrei%20essere%20avvisato%20quando%20Riserbo%20sar%C3%A0%20disponibile.%0A%0ATipo%20di%20studio%20(facoltativo)%3A%20"><svg aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM203.43,64,128,133.15,52.57,64ZM216,192H40V74.19l82.59,75.71a8,8,0,0,0,10.82,0L216,74.19V192Z"/></svg>Entra nella lista d'attesa</a>
+        <a class="secondario" href="#come-funziona">Come funziona</a>
+      </div>
+    </div>
+    <figure class="documento" aria-labelledby="doc-descrizione">
+      <p id="doc-descrizione" class="visivamente-nascosto">Esempio: in una dichiarazione il nome, il codice fiscale, il comune di nascita e l'IBAN vengono oscurati; l'indirizzo viene evidenziato in giallo per un controllo a occhio; la verifica finale conferma che nel file non resta nessun dato oscurato.</p>
+      <div aria-hidden="true">
+        <div class="intestazione-doc">Dichiarazione sostitutiva di certificazione</div>
+        <p>La sottoscritta <span class="dato">Laura Bianchi</span>, codice fiscale <span class="dato">BNCLRA82M45G388D</span>, nata a <span class="dato">Pavia</span>, residente in <span class="dubbio">via dei Mille 14</span>, dichiara di essere titolare del conto corrente</p>
+        <p>IBAN <span class="dato">IT60 X054 2811 1010 0000 0123 456</span> presso cui chiede l'accredito delle somme spettanti.</p>
+        <div class="esito">
+          <span><i class="segno nero"></i>4 dati rimossi dal file</span>
+          <span><i class="segno giallo"></i>1 indirizzo da controllare a occhio</span>
+          <span><i class="segno verde"></i>Verifica: nessun dato rimosso è ancora leggibile nel file</span>
+        </div>
+      </div>
+    </figure>
+  </div>
+</section>
+
+<section class="sezione" aria-labelledby="t-coprire">
+  <div class="contenitore due-colonne">
+    <div>
+      <div class="occhiello">Il problema</div>
+      <h2 id="t-coprire">Coprire non è cancellare.</h2>
+    </div>
+    <div class="corpo">
+      <p>Un rettangolo nero disegnato sopra un PDF nasconde il testo allo sguardo, ma spesso il testo resta nel file: basta selezionarlo e copiarlo. Nei file Word succede lo stesso con commenti, proprietà del documento e cronologia delle revisioni.</p>
+      <p>Il documento sembra pulito, ma chi lo riceve, un collega, un ufficio o uno strumento di intelligenza artificiale, può ancora leggere quei dati. <a href="/guide/coprire-non-e-cancellare.html">Perché succede</a>.</p>
+    </div>
+  </div>
+  <div class="contenitore">
+    <div class="confronto">
+      <div class="loro"><h3><svg aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M128,26A102,102,0,1,0,230,128,102.12,102.12,0,0,0,128,26Zm90,102a89.6,89.6,0,0,1-22.29,59.22L68.78,60.29A89.95,89.95,0,0,1,218,128ZM38,128A89.6,89.6,0,0,1,60.29,68.78L187.22,195.71A89.95,89.95,0,0,1,38,128Z"/></svg>Strumenti di copertura</h3><p>Disegnano sopra il dato. Il file sembra pulito, ma il contenuto originale può essere ancora dentro.</p></div>
+      <div class="nostro"><h3><svg aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M224.42,104.2c-3.9-4.07-7.93-8.27-9.55-12.18-1.5-3.63-1.58-9-1.67-14.68-.14-9.38-.3-20-7.42-27.12S188,42.94,178.66,42.8c-5.68-.09-11-.17-14.68-1.67-3.91-1.62-8.11-5.65-12.18-9.55C145.16,25.22,137.64,18,128,18s-17.16,7.22-23.8,13.58c-4.07,3.9-8.27,7.93-12.18,9.55-3.63,1.5-9,1.58-14.68,1.67-9.38.14-20,.3-27.12,7.42S42.94,68,42.8,77.34c-.09,5.68-.17,11-1.67,14.68-1.62,3.91-5.65,8.11-9.55,12.18C25.22,110.84,18,118.36,18,128s7.22,17.16,13.58,23.8c3.9,4.07,7.93,8.27,9.55,12.18,1.5,3.63,1.58,9,1.67,14.68.14,9.38.3,20,7.42,27.12S68,213.06,77.34,213.2c5.68.09,11,.17,14.68,1.67,3.91,1.62,8.11,5.65,12.18,9.55C110.84,230.78,118.36,238,128,238s17.16-7.22,23.8-13.58c4.07-3.9,8.27-7.93,12.18-9.55,3.63-1.5,9-1.58,14.68-1.67,9.38-.14,20-.3,27.12-7.42s7.28-17.74,7.42-27.12c.09-5.68.17-11,1.67-14.68,1.62-3.91,5.65-8.11,9.55-12.18C230.78,145.16,238,137.64,238,128S230.78,110.84,224.42,104.2Zm-8.66,39.3c-4.67,4.86-9.5,9.9-12,15.9-2.38,5.74-2.48,12.52-2.58,19.08-.11,7.44-.23,15.14-3.9,18.82s-11.38,3.79-18.82,3.9c-6.56.1-13.34.2-19.08,2.58-6,2.48-11,7.31-15.91,12-5.25,5-10.68,10.24-15.49,10.24s-10.24-5.21-15.5-10.24c-4.86-4.67-9.9-9.5-15.9-12-5.74-2.38-12.52-2.48-19.08-2.58-7.44-.11-15.14-.23-18.82-3.9s-3.79-11.38-3.9-18.82c-.1-6.56-.2-13.34-2.58-19.08-2.48-6-7.31-11-12-15.91C35.21,138.24,30,132.81,30,128s5.21-10.24,10.24-15.5c4.67-4.86,9.5-9.9,12-15.9,2.38-5.74,2.48-12.52,2.58-19.08.11-7.44.23-15.14,3.9-18.82s11.38-3.79,18.82-3.9c6.56-.1,13.34-.2,19.08-2.58,6-2.48,11-7.31,15.91-12C117.76,35.21,123.19,30,128,30s10.24,5.21,15.5,10.24c4.86,4.67,9.9,9.5,15.9,12,5.74,2.38,12.52,2.48,19.08,2.58,7.44.11,15.14.23,18.82,3.9s3.79,11.38,3.9,18.82c.1,6.56.2,13.34,2.58,19.08,2.48,6,7.31,11,12,15.91,5,5.25,10.24,10.68,10.24,15.49S220.79,138.24,215.76,143.5ZM172.24,99.76a6,6,0,0,1,0,8.48l-56,56a6,6,0,0,1-8.48,0l-24-24a6,6,0,0,1,8.48-8.48L112,151.51l51.76-51.75A6,6,0,0,1,172.24,99.76Z"/></svg>Riserbo</h3><p>Toglie il dato dal file, poi rilegge il risultato da zero. Se trova ancora qualcosa, non salva.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sezione scura" id="come-funziona" aria-labelledby="t-come">
+  <div class="contenitore">
+    <div class="testa-sezione">
+      <div><div class="occhiello">Come funziona</div><h2 id="t-come">Quattro passaggi, l'ultima parola è tua.</h2></div>
+      <p>Il programma propone, tu decidi. Niente viene tolto o lasciato senza che tu lo veda.</p>
+    </div>
+    <ol class="passi">
+      <li><h3>Apri il documento</h3><p>Un PDF, anche scansionato, una foto di un documento o un file Word (.docx) in italiano. Il file non lascia mai il tuo computer.</p></li>
+      <li><h3>Il programma trova i dati</h3><p>Codici fiscali, partite IVA, IBAN, email e telefoni in automatico. Nomi e cognomi li indichi tu, e vengono cercate anche le varianti.</p></li>
+      <li><h3>Controlli pagina per pagina</h3><p>Vedi ogni pagina con le zone proposte. Indirizzi, date di nascita e riferimenti indiretti sono segnalati in giallo. Approvi, togli o aggiungi.</p></li>
+      <li><h3>Rimozione e verifica</h3><p>Il dato viene tolto dal file. Il risultato viene riletto da zero: se un dato è ancora presente, il salvataggio si blocca.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sezione" aria-labelledby="t-trova">
+  <div class="contenitore">
+    <div class="testa-sezione">
+      <div><div class="occhiello">Che cosa trova</div><h2 id="t-trova">Ogni tipo di dato ha la sua regola.</h2></div>
+      <p>Dove esiste un controllo matematico lo usiamo: un codice fiscale con il carattere di controllo sbagliato non è un codice fiscale. <a href="/guide/codici-di-controllo.html">Come funziona il controllo</a>.</p>
+    </div>
+    <div class="contorno-tabella">
+      <table class="tabella">
+        <thead><tr><th scope="col">Dato</th><th scope="col">Come viene riconosciuto</th><th scope="col">Cosa succede</th></tr></thead>
+        <tbody>
+          <tr><td>Codice fiscale</td><td>Struttura e carattere di controllo, comprese le omocodie.</td><td><span class="etichetta oro">Proposto per la rimozione</span></td></tr>
+          <tr><td>Partita IVA</td><td>Undici cifre e cifra di controllo.</td><td><span class="etichetta oro">Proposto per la rimozione</span></td></tr>
+          <tr><td>IBAN italiano</td><td>Struttura e codice di controllo internazionale.</td><td><span class="etichetta oro">Proposto per la rimozione</span></td></tr>
+          <tr><td>Email e telefono</td><td>Forma dell'indirizzo email e dei numeri di telefono.</td><td><span class="etichetta oro">Proposto per la rimozione</span></td></tr>
+          <tr><td>Nomi e cognomi</td><td>Quelli che indichi tu, con le varianti: maiuscole, ordine invertito, iniziali.</td><td><span class="etichetta oro">Proposto per la rimozione</span></td></tr>
+          <tr><td>Riferimenti indiretti</td><td>Indirizzi, date di nascita, frasi come "il figlio del mio cliente".</td><td><span class="etichetta giallo">Segnalato in giallo, decidi tu</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="sezione scura" aria-labelledby="t-toglie">
+  <div class="contenitore due-colonne">
+    <div>
+      <div class="occhiello">Che cosa toglie</div>
+      <h2 id="t-toglie">Anche quello che non si vede.</h2>
+      <p class="corpo" style="margin-top:18px">Un file contiene molto più di quello che appare sulla pagina. Riserbo pulisce anche le parti nascoste, e alla fine ti consegna un rapporto.</p>
+    </div>
+    <ul class="elenco-segni">
+      <li><svg aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M223.57,81.81,182.19,40.43a22,22,0,0,0-31.12,0L32.43,159.07a22,22,0,0,0,0,31.11L62.5,220.24A6,6,0,0,0,66.74,222H216a6,6,0,0,0,0-12H126.49l97.08-97.08A22,22,0,0,0,223.57,81.81ZM109.51,210H69.22l-28.3-28.3a10,10,0,0,1,0-14.15L96,112.48,151.52,168ZM215.08,104.44,160,159.51,104.48,104l55.08-55.07a10,10,0,0,1,14.14,0l41.38,41.37A10,10,0,0,1,215.08,104.44Z"/></svg><span><strong>Il testo oscurato</strong>, che viene rimosso dal file e non solo coperto.</span></li>
+      <li><svg aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M212.24,83.76l-56-56A6,6,0,0,0,152,26H56A14,14,0,0,0,42,40V216a14,14,0,0,0,14,14H200a14,14,0,0,0,14-14V88A6,6,0,0,0,212.24,83.76ZM158,46.48,193.52,82H158ZM200,218H56a2,2,0,0,1-2-2V40a2,2,0,0,1,2-2h90V88a6,6,0,0,0,6,6h50V216A2,2,0,0,1,200,218Zm-48.11-50.59a34.05,34.05,0,1,0-8.48,8.48l12.35,12.35a6,6,0,0,0,8.48-8.48ZM102,148a22,22,0,1,1,22,22A22,22,0,0,1,102,148Z"/></svg><span><strong>I metadati</strong>: autore, titolo e altre proprietà del documento.</span></li>
+      <li><svg aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M216,50H40A14,14,0,0,0,26,64V224a13.88,13.88,0,0,0,8.09,12.69A14.11,14.11,0,0,0,40,238a13.87,13.87,0,0,0,9-3.31l.06-.05L82.23,206H216a14,14,0,0,0,14-14V64A14,14,0,0,0,216,50Zm2,142a2,2,0,0,1-2,2H80a6,6,0,0,0-3.92,1.46L41.26,225.53A2,2,0,0,1,38,224V64a2,2,0,0,1,2-2H216a2,2,0,0,1,2,2Zm-52-80a6,6,0,0,1-6,6H96a6,6,0,0,1,0-12h64A6,6,0,0,1,166,112Zm0,32a6,6,0,0,1-6,6H96a6,6,0,0,1,0-12h64A6,6,0,0,1,166,144Z"/></svg><span><strong>I commenti</strong> e le note.</span></li>
+      <li><svg aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M222,152a6,6,0,0,1-6,6H190v20h18a6,6,0,0,1,0,12H190v18a6,6,0,0,1-12,0V152a6,6,0,0,1,6-6h32A6,6,0,0,1,222,152ZM90,172a26,26,0,0,1-26,26H54v10a6,6,0,0,1-12,0V152a6,6,0,0,1,6-6H64A26,26,0,0,1,90,172Zm-12,0a14,14,0,0,0-14-14H54v28H64A14,14,0,0,0,78,172Zm84,8a34,34,0,0,1-34,34H112a6,6,0,0,1-6-6V152a6,6,0,0,1,6-6h16A34,34,0,0,1,162,180Zm-12,0a22,22,0,0,0-22-22H118v44h10A22,22,0,0,0,150,180ZM42,112V40A14,14,0,0,1,56,26h96a6,6,0,0,1,4.25,1.76l56,56A6,6,0,0,1,214,88v24a6,6,0,0,1-12,0V94H152a6,6,0,0,1-6-6V38H56a2,2,0,0,0-2,2v72a6,6,0,0,1-12,0ZM158,82h35.52L158,46.48Z"/></svg><span><strong>Gli allegati</strong> contenuti nel file.</span></li>
+      <li><svg aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M52,146H36a6,6,0,0,0-6,6v56a6,6,0,0,0,6,6H52a34,34,0,0,0,0-68Zm0,56H42V158H52a22,22,0,0,1,0,44Zm168.15-5.46a6,6,0,0,1,.18,8.48A28.06,28.06,0,0,1,200,214c-16.54,0-30-15.25-30-34s13.46-34,30-34a28.06,28.06,0,0,1,20.33,9,6,6,0,0,1-8.66,8.3A16.23,16.23,0,0,0,200,158c-9.93,0-18,9.87-18,22s8.07,22,18,22a16.23,16.23,0,0,0,11.67-5.28A6,6,0,0,1,220.15,196.54ZM128,146c-16.54,0-30,15.25-30,34s13.46,34,30,34,30-15.25,30-34S144.54,146,128,146Zm0,56c-9.93,0-18-9.87-18-22s8.07-22,18-22,18,9.87,18,22S137.93,202,128,202ZM48,118a6,6,0,0,0,6-6V40a2,2,0,0,1,2-2h90V88a6,6,0,0,0,6,6h50v18a6,6,0,0,0,12,0V88a6,6,0,0,0-1.76-4.24l-56-56A6,6,0,0,0,152,26H56A14,14,0,0,0,42,40v72A6,6,0,0,0,48,118ZM158,46.48,193.52,82H158Z"/></svg><span><strong>La cronologia delle revisioni</strong> dei file Word.</span></li>
+      <li><svg aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M222,128a6,6,0,0,1-6,6H128a6,6,0,0,1,0-12h88A6,6,0,0,1,222,128ZM128,70h88a6,6,0,0,0,0-12H128a6,6,0,0,0,0,12Zm88,116H128a6,6,0,0,0,0,12h88a6,6,0,0,0,0-12ZM83.76,43.76,56,71.51,44.24,59.76a6,6,0,0,0-8.48,8.48l16,16a6,6,0,0,0,8.48,0l32-32a6,6,0,0,0-8.48-8.48Zm0,64L56,135.51,44.24,123.76a6,6,0,1,0-8.48,8.48l16,16a6,6,0,0,0,8.48,0l32-32a6,6,0,0,0-8.48-8.48Zm0,64L56,199.51,44.24,187.76a6,6,0,0,0-8.48,8.48l16,16a6,6,0,0,0,8.48,0l32-32a6,6,0,0,0-8.48-8.48Z"/></svg><span><strong>Il rapporto finale</strong>: cosa è stato tolto, pagina per pagina, senza riportare i dati.</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="sezione" aria-labelledby="t-limiti">
+  <div class="contenitore due-colonne">
+    <div>
+      <div class="occhiello">Con onestà</div>
+      <h2 id="t-limiti">Cosa non fa, per ora.</h2>
+      <p class="corpo" style="margin-top:18px">La prima versione fa una cosa sola e deve farla bene. Preferiamo dirlo prima.</p>
+    </div>
+    <ul class="elenco-segni">
+      <li><svg aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M235.07,189.09,147.61,37.22h0a22.75,22.75,0,0,0-39.22,0L20.93,189.09a21.53,21.53,0,0,0,0,21.72A22.35,22.35,0,0,0,40.55,222h174.9a22.35,22.35,0,0,0,19.6-11.19A21.53,21.53,0,0,0,235.07,189.09ZM224.66,204.8a10.46,10.46,0,0,1-9.21,5.2H40.55a10.46,10.46,0,0,1-9.21-5.2,9.51,9.51,0,0,1,0-9.72L118.79,43.21a10.75,10.75,0,0,1,18.42,0l87.46,151.87A9.51,9.51,0,0,1,224.66,204.8ZM122,144V104a6,6,0,0,1,12,0v40a6,6,0,0,1-12,0Zm16,36a10,10,0,1,1-10-10A10,10,0,0,1,138,180Z"/></svg><span>Non legge la scrittura a mano.</span></li>
+      <li><svg aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M235.07,189.09,147.61,37.22h0a22.75,22.75,0,0,0-39.22,0L20.93,189.09a21.53,21.53,0,0,0,0,21.72A22.35,22.35,0,0,0,40.55,222h174.9a22.35,22.35,0,0,0,19.6-11.19A21.53,21.53,0,0,0,235.07,189.09ZM224.66,204.8a10.46,10.46,0,0,1-9.21,5.2H40.55a10.46,10.46,0,0,1-9.21-5.2,9.51,9.51,0,0,1,0-9.72L118.79,43.21a10.75,10.75,0,0,1,18.42,0l87.46,151.87A9.51,9.51,0,0,1,224.66,204.8ZM122,144V104a6,6,0,0,1,12,0v40a6,6,0,0,1-12,0Zm16,36a10,10,0,1,1-10-10A10,10,0,0,1,138,180Z"/></svg><span>Lavora sui documenti in italiano, solo su Windows.</span></li>
+      <li><svg aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M235.07,189.09,147.61,37.22h0a22.75,22.75,0,0,0-39.22,0L20.93,189.09a21.53,21.53,0,0,0,0,21.72A22.35,22.35,0,0,0,40.55,222h174.9a22.35,22.35,0,0,0,19.6-11.19A21.53,21.53,0,0,0,235.07,189.09ZM224.66,204.8a10.46,10.46,0,0,1-9.21,5.2H40.55a10.46,10.46,0,0,1-9.21-5.2,9.51,9.51,0,0,1,0-9.72L118.79,43.21a10.75,10.75,0,0,1,18.42,0l87.46,151.87A9.51,9.51,0,0,1,224.66,204.8ZM122,144V104a6,6,0,0,1,12,0v40a6,6,0,0,1-12,0Zm16,36a10,10,0,1,1-10-10A10,10,0,0,1,138,180Z"/></svg><span>Elabora un documento alla volta, non intere cartelle.</span></li>
+      <li><svg aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M235.07,189.09,147.61,37.22h0a22.75,22.75,0,0,0-39.22,0L20.93,189.09a21.53,21.53,0,0,0,0,21.72A22.35,22.35,0,0,0,40.55,222h174.9a22.35,22.35,0,0,0,19.6-11.19A21.53,21.53,0,0,0,235.07,189.09ZM224.66,204.8a10.46,10.46,0,0,1-9.21,5.2H40.55a10.46,10.46,0,0,1-9.21-5.2,9.51,9.51,0,0,1,0-9.72L118.79,43.21a10.75,10.75,0,0,1,18.42,0l87.46,151.87A9.51,9.51,0,0,1,224.66,204.8ZM122,144V104a6,6,0,0,1,12,0v40a6,6,0,0,1-12,0Zm16,36a10,10,0,1,1-10-10A10,10,0,0,1,138,180Z"/></svg><span>Non usa l'intelligenza artificiale per decidere cosa togliere.</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="sezione scura" aria-labelledby="t-requisiti">
+  <div class="contenitore">
+    <div class="testa-sezione">
+      <div><div class="occhiello">Dettagli</div><h2 id="t-requisiti">Requisiti, qualità e prezzo.</h2></div>
+      <p>Numeri che pubblicheremo così come sono, anche quando non saranno perfetti.</p>
+    </div>
+    <div class="schede">
+      <div class="scheda"><div class="icona"><svg aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M214,72a6,6,0,0,1-6,6H176a6,6,0,0,1,0-12h32A6,6,0,0,1,214,72Zm-6,26H176a6,6,0,0,0,0,12h32a6,6,0,0,0,0-12Zm38-50V208a14,14,0,0,1-14,14H152a14,14,0,0,1-14-14V190H94v20h18a6,6,0,0,1,0,12H64a6,6,0,0,1,0-12H82V190H32a22,22,0,0,1-22-22V96A22,22,0,0,1,32,74H138V48a14,14,0,0,1,14-14h80A14,14,0,0,1,246,48ZM138,178V86H32A10,10,0,0,0,22,96v72a10,10,0,0,0,10,10ZM234,48a2,2,0,0,0-2-2H152a2,2,0,0,0-2,2V208a2,2,0,0,0,2,2h80a2,2,0,0,0,2-2ZM192,170a10,10,0,1,0,10,10A10,10,0,0,0,192,170Z"/></svg></div><h3>Requisiti</h3><p>Windows 10 o 11 a 64 bit. Funziona senza connessione a internet.</p></div>
+      <div class="scheda"><div class="icona"><svg aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M222,128a6,6,0,0,1-6,6H128a6,6,0,0,1,0-12h88A6,6,0,0,1,222,128ZM128,70h88a6,6,0,0,0,0-12H128a6,6,0,0,0,0,12Zm88,116H128a6,6,0,0,0,0,12h88a6,6,0,0,0,0-12ZM83.76,43.76,56,71.51,44.24,59.76a6,6,0,0,0-8.48,8.48l16,16a6,6,0,0,0,8.48,0l32-32a6,6,0,0,0-8.48-8.48Zm0,64L56,135.51,44.24,123.76a6,6,0,1,0-8.48,8.48l16,16a6,6,0,0,0,8.48,0l32-32a6,6,0,0,0-8.48-8.48Zm0,64L56,199.51,44.24,187.76a6,6,0,0,0-8.48,8.48l16,16a6,6,0,0,0,8.48,0l32-32a6,6,0,0,0-8.48-8.48Z"/></svg></div><h3>Qualità misurata</h3><p>Lo proviamo su una raccolta di documenti inventati, con dati finti. Pubblicheremo quanti dati trova e quanti falsi allarmi dà. L'obiettivo per codici e IBAN: nessun dato mancato.</p></div>
+      <div class="scheda"><div class="icona"><svg aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M208,42H48A22,22,0,0,0,26,64V176a22,22,0,0,0,22,22H208a22,22,0,0,0,22-22V64A22,22,0,0,0,208,42Zm10,134a10,10,0,0,1-10,10H48a10,10,0,0,1-10-10V64A10,10,0,0,1,48,54H208a10,10,0,0,1,10,10Zm-52,48a6,6,0,0,1-6,6H96a6,6,0,0,1,0-12h64A6,6,0,0,1,166,224Z"/></svg></div><h3>Velocità</h3><p>L'obiettivo è analizzare un documento di 50 pagine in meno di 30 secondi su un normale PC d'ufficio. Pubblicheremo la misura reale.</p></div>
+      <div class="scheda"><div class="icona"><svg aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M241.91,137.42,142.59,38.1a13.94,13.94,0,0,0-9.9-4.1H40a6,6,0,0,0-6,6v92.69a13.94,13.94,0,0,0,4.1,9.9l99.32,99.32a14,14,0,0,0,19.8,0l84.69-84.69A14,14,0,0,0,241.91,137.42Zm-8.49,11.31-84.69,84.69a2,2,0,0,1-2.83,0L46.59,134.1a2,2,0,0,1-.59-1.41V46h86.69a2,2,0,0,1,1.41.59l99.32,99.31A2,2,0,0,1,233.42,148.73ZM94,84A10,10,0,1,1,84,74,10,10,0,0,1,94,84Z"/></svg></div><h3>Prezzo</h3><p>Licenza annuale per postazione, con prova gratuita. Il prezzo sarà pubblicato su questa pagina prima dell'uscita.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sezione" aria-labelledby="t-domande">
+  <div class="contenitore due-colonne">
+    <div><div class="occhiello">Domande</div><h2 id="t-domande">Domande frequenti.</h2></div>
+    <div class="domande">
+      <details><summary>I miei documenti arrivano a voi?</summary><p>No. Il programma lavora solo sul tuo computer e non si collega a internet. I documenti che apri non lasciano mai il tuo studio.</p></details>
+      <details><summary>Funziona con i documenti scansionati?</summary><p>Sì. Il testo delle scansioni e delle foto viene riconosciuto sul tuo computer, senza internet. Le parole lette con poca sicurezza sono segnalate in giallo, e l'oscuramento cancella davvero l'immagine nella zona, non la copre. La qualità dipende dalla scansione: pubblicheremo i risultati delle prove separati da quelli dei documenti con testo.</p></details>
+      <details><summary>Usa l'intelligenza artificiale?</summary><p>No. Ogni dato viene riconosciuto con regole precise e, dove esiste, con il controllo matematico. Così lo stesso documento dà sempre lo stesso risultato, e puoi capire perché.</p></details>
+      <details><summary>E se il programma sbaglia?</summary><p>Per questo c'è la revisione pagina per pagina: vedi tutto quello che viene proposto e puoi togliere o aggiungere. Alla fine il file viene riletto: se un dato oscurato è ancora presente, il salvataggio si blocca.</p></details>
+      <details><summary>Quando esce?</summary><p>Non abbiamo ancora una data e non vogliamo inventarla. Iscriviti alla lista d'attesa: ti scriviamo una sola volta, quando sarà disponibile.</p></details>
+    </div>
+  </div>
+</section>
+<section class="fascia" aria-labelledby="t-fascia">
+  <div class="contenitore">
+    <h2 id="t-fascia">Vuoi sapere quando Riserbo sarà pronto?</h2>
+    <p>Scrivici da un indirizzo del tuo studio. Ti avvisiamo una sola volta, quando il programma sarà disponibile.</p>
+    <div class="azioni"><a class="pulsante" href="mailto:info@talorynlabs.it?subject=Lista%20d%27attesa%20Riserbo&amp;body=Vorrei%20essere%20avvisato%20quando%20Riserbo%20sar%C3%A0%20disponibile.%0A%0ATipo%20di%20studio%20(facoltativo)%3A%20"><svg aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM203.43,64,128,133.15,52.57,64ZM216,192H40V74.19l82.59,75.71a8,8,0,0,0,10.82,0L216,74.19V192Z"/></svg>Entra nella lista d'attesa</a></div>
+  </div>
+</section>
+</main>
+<footer class="piede">
+  <div class="contenitore">
+    <div class="griglia">
+      <div>
+        <img src="/img/logo-480.webp" width="176" height="54" alt="Taloryn Labs">
+        <p>Software per studi professionali. Regole chiare, dati protetti.</p>
+        <p><a href="mailto:info@talorynlabs.it">info@talorynlabs.it</a></p>
+      </div>
+      <div>
+        <h2>Studio</h2>
+        <ul><li><a href="/">Chi siamo</a></li><li><a href="/sicurezza.html">Sicurezza</a></li><li><a href="/contatti.html">Contatti</a></li></ul>
+      </div>
+      <div>
+        <h2>Prodotto</h2>
+        <ul><li><a href="/riserbo.html">Riserbo</a></li><li><a href="/contatti.html#lista-attesa">Lista d'attesa</a></li><li><a href="/guide/">Guide</a></li></ul>
+      </div>
+      <div>
+        <h2>Note legali</h2>
+        <ul><li><a href="/privacy.html">Informativa privacy</a></li><li><a href="/termini.html">Condizioni d'uso</a></li></ul>
+      </div>
+    </div>
+    <div class="fondo">
+      <span>© 2026 Taloryn Labs - Tutti i diritti riservati.</span>
+      <span>Questo sito non usa cookie né strumenti di tracciamento.</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
