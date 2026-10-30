@@ -169,7 +169,7 @@ home = f'''<section class="apertura" aria-labelledby="t-apertura">
       <div class="testo-prodotto">
         <div class="occhiello">Il primo prodotto</div>
         <h2 id="t-prodotto">Riserbo</h2>
-        <p class="corpo" style="margin-top:16px">Toglie davvero codici fiscali, IBAN e nomi da PDF e file Word, sul tuo computer e senza internet. Poi rilegge il file da zero e controlla che non ne resti traccia.</p>
+        <p class="corpo" style="margin-top:16px">Toglie davvero codici fiscali, IBAN e nomi da PDF, documenti scansionati, foto di documenti e file Word, sul tuo computer e senza internet. Poi rilegge il file da zero e controlla che non ne resti traccia.</p>
         <ul class="elenco-segni">
           <li>{ico("check-circle")}<span>Riconosce codice fiscale, partita IVA e IBAN anche con il loro carattere di controllo.</span></li>
           <li>{ico("check-circle")}<span>Rimuove il dato dal file, non lo copre soltanto: anche da metadati, commenti e revisioni.</span></li>
@@ -235,7 +235,7 @@ pdf = f'''<section class="testa-pagina con-figura" aria-labelledby="t-pdf">
     <div>
       <div class="occhiello">Riserbo</div>
       <h1 id="t-pdf">Documenti dei clienti, condivisi senza i loro dati.</h1>
-      <p class="introduzione" style="margin-top:24px">Riserbo toglie codici fiscali, IBAN e nomi da PDF e file Word in italiano. Lavora sul tuo computer, senza internet, e prima di salvare controlla che nel file non ne resti traccia.</p>
+      <p class="introduzione" style="margin-top:24px">Riserbo toglie codici fiscali, IBAN e nomi da PDF, documenti scansionati, foto di documenti e file Word in italiano. Lavora sul tuo computer, senza internet, e prima di salvare controlla che nel file non ne resti traccia.</p>
       <div class="stato"><i></i>In sviluppo · per Windows 10 e 11</div>
       <div class="azioni">
         <a class="pulsante" href="{ATTESA}">{ico("envelope-simple", "regular")}Entra nella lista d'attesa</a>
@@ -375,8 +375,8 @@ pdf = f'''<section class="testa-pagina con-figura" aria-labelledby="t-pdf">
     </div>
   </div>
 </section>'''
-pagina("riserbo.html", "Riserbo — oscuramento vero di PDF e Word | Taloryn Labs",
-       "Riserbo rimuove davvero codici fiscali, IBAN e nomi dai PDF e dai file Word, sul tuo computer e senza internet, e verifica che non ne resti traccia.",
+pagina("riserbo.html", "Riserbo — oscuramento vero di PDF, scansioni e Word | Taloryn Labs",
+       "Riserbo rimuove davvero codici fiscali, IBAN e nomi da PDF, scansioni, foto di documenti e file Word, sul tuo computer e senza internet, e verifica che non ne resti traccia.",
        "/riserbo.html", pdf)
 
 # ------------------------------------------------------------------ SICUREZZA
