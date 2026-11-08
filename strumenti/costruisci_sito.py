@@ -458,6 +458,8 @@ GUIDE = [
      "Quattro controlli che puoi fare in pochi minuti, con i programmi che hai già, prima di inviare un PDF o un file Word.", "6 minuti"),
     ("codici-di-controllo.html", "Codice fiscale, partita IVA e IBAN: il controllo che non sbaglia",
      "Come funzionano i caratteri di controllo e perché permettono di riconoscere questi dati con certezza.", "7 minuti"),
+    ("scansioni-e-foto.html", "Scansioni e foto: dove si nascondono i dati",
+     "Il testo invisibile che aggiungono gli scanner, la posizione salvata nelle foto del telefono, la sfocatura che non protegge: che cosa controllare prima di inviare un'immagine.", "6 minuti"),
 ]
 schede_guide = "".join(
     f'<a class="guida" href="/guide/{f}"><span class="meta">Lettura: {t}</span><h3>{h}</h3><p>{d}</p><span class="leggi">Leggi la guida{ico("arrow-right", "regular")}</span></a>'
@@ -554,6 +556,31 @@ articolo("controllare-pdf-oscurato.html", *g["controllare-pdf-oscurato.html"], c
 
 <h2>Se un controllo fallisce</h2>
 <p>Non basta coprire di nuovo. Il dato va tolto dal file, e il documento va controllato un'altra volta dall'inizio. È esattamente il lavoro che Riserbo fa in automatico: rimuove il dato, pulisce le parti nascoste e rilegge il file prima di salvarlo.</p>
+''')
+
+articolo("scansioni-e-foto.html", *g["scansioni-e-foto.html"], corpo='''
+<h2>Una scansione non è solo un'immagine</h2>
+<p>Molti scanner e molte app che «scansionano» con il telefono creano un PDF <strong>ricercabile</strong>: leggono la pagina con il riconoscimento del testo e mettono sotto l'immagine uno strato di testo invisibile, perché tu possa cercare le parole o copiarle. È comodo, ma ha una conseguenza: se poi copri un dato disegnando un rettangolo nero sull'immagine, il testo invisibile sotto resta. Chi riceve il file lo può selezionare, copiare e leggere.</p>
+<p>Per capire se una scansione ha questo strato, apri il PDF e prova a selezionare una parola con il mouse, oppure premi <span class="tasto">Ctrl</span> + <span class="tasto">F</span> e cerca un nome: se il programma la trova, il testo c'è.</p>
+
+<h2>Le foto del telefono si portano dietro informazioni</h2>
+<p>Una foto scattata con il telefono contiene, oltre all'immagine, dei dati nascosti (si chiamano <strong>EXIF</strong>): il modello del telefono, la data e l'ora, e spesso la <strong>posizione</strong> in cui è stata scattata, con le coordinate. Se fotografi un documento nello studio o a casa di un cliente, quella posizione viaggia con la foto.</p>
+<p>Per vederli su Windows: fai clic con il tasto destro sulla foto, scegli <strong>Proprietà</strong> e apri la scheda <strong>Dettagli</strong>. Nella stessa scheda, in basso, il collegamento <strong>Rimuovi proprietà e informazioni personali</strong> permette di creare una copia senza questi dati. Anche molte app del telefono, al momento di condividere una foto, hanno un'opzione per non includere la posizione.</p>
+
+<h2>Sfocare o pixelare non basta</h2>
+<p>Sfocare un dato o trasformarlo in quadretti (pixelare) lo rende illeggibile all'occhio, ma non sempre lo cancella: quello che resta dipende ancora dalle lettere originali. Esistono programmi dimostrativi pubblici che, in certe condizioni, ricostruiscono testo pixelato da una schermata. L'unica copertura sicura su un'immagine è un riquadro <strong>pieno e opaco</strong> che sostituisce davvero i punti dell'immagine, non un velo semitrasparente sopra.</p>
+
+<h2>Quando l'immagine viene salvata di nuovo</h2>
+<p>Coprire bene i punti dell'immagine non basta se il file conserva anche la versione precedente. Alcuni programmi salvano le modifiche come un livello sopra l'originale, oppure tengono una piccola anteprima dell'immagine com'era prima. Per questo, dopo aver coperto i dati, conviene salvare una <strong>copia nuova</strong> e controllarla: aprila, ingrandisci le zone coperte e ripeti i controlli sul testo.</p>
+
+<h2>In pratica, prima di inviare una scansione o una foto</h2>
+<ol>
+  <li>controlla se il PDF ha il testo nascosto (cerca un nome con <span class="tasto">Ctrl</span> + <span class="tasto">F</span>);</li>
+  <li>copri i dati con riquadri pieni e opachi, mai con sfocatura, quadretti o veli semitrasparenti;</li>
+  <li>togli il testo nascosto e i dati della foto, come la posizione;</li>
+  <li>salva una copia nuova e ricontrollala dall'inizio.</li>
+</ol>
+<p>Riserbo fa questi passaggi da solo sul tuo computer: legge l'immagine, propone i dati da togliere, annerisce davvero i punti dell'immagine, toglie il testo nascosto e i dati della foto, e rilegge il file prima di salvarlo. Per i controlli sui PDF con testo e sui file Word trovi i passaggi nella guida <a href="/guide/controllare-pdf-oscurato.html">Come controllare se un documento oscurato è davvero pulito</a>.</p>
 ''')
 
 articolo("codici-di-controllo.html", *g["codici-di-controllo.html"], corpo='''
