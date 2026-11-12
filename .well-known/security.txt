@@ -1,0 +1,5 @@
+Contact: mailto:info@talorynlabs.it
+Expires: 2027-10-22T00:00:00.000Z
+Preferred-Languages: it, en
+Canonical: https://talorynlabs.it/.well-known/security.txt
+Policy: https://talorynlabs.it/sicurezza.html
